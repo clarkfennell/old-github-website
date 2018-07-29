@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="JS/fade.js">
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+<body onLoad="fade("mainpage"); upfade("aboutme"); closeNav();">
+<div class="title">
+<p class="heading">CLARK FENNELL</p>
+        <p class="heading2">PORTFOLIO WEBSITE</p>
+    	<p class="small-heading">
+		<script type="text/javascript">
+			$(function() {
+				changer();
+			});
+			
+			function changer() {
+				var words = ["UX/UI DESIGNER", "SOFTWARE ENGINEER", "FRONT-END DEVELOPER"];
+				var idx = Math.floor(words.length * Math.random());
+				$('#change').text(words[idx]);
+				var time = Math.floor(500 * Math.random() + 500);
+				setTimeout(changer,time)
+			}
+		</script>
+        <span id="change">FRONT-END DEVELOPER</span>
+        </p>
+</div>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a><br>
+    <a href="javascript:void(0)" onclick="fade("mainpage"); upfade("aboutme"); closeNav();">ABOUT ME</a><br>
+    <a href="#" onclick="fade(mainpage); upfade("myhtmlcss"); closeNav();">HTMK & CSS</a><br>
+    <a href="#" onclick="fade(mainpage); upfade("myjscript"); closeNav();">JAVASCRIPT</a><br>
+    <a href="#" onclick="fade(mainpage); upfade("mycv"); closeNav();">MY CV</a><br>
+    <a href="#" onclick="fade(mainpage); upfade("contactme"); closeNav();">CONTACT</a><br>
+</div>
+    <button class="sidenav" onclick="openNav()">&#9776;</button>
+<div id = "mainpage">
+    <section>
+      	<div id="aboutme">
+			<h2>ABOUT ME</h2>
+			<p>Age: 29<br>Location: Leeds<br>To view my CV: <a href="/myCV.html">Click Here</a><br><br>I am a developer specialising in HTML, CSS, JAVA, JaveScript, SQL, Command Line, Ruby and many more.<br><br>I am also well equpit at using Adobe programs, such as, PhotoShop, Dreamweaver, Illistrator, InDesign, and other software as well.<br><br>I like to board and video games, watching indepentdant professional wrestling & a nice cup of tea.</p>
+     	</div>
+    </section>
+    <section>
+    	<div id="myhtmlcss">
+			<h2>HTML & CSS</h2>
+			<p>This site is just one example of my HTML, CSS & SCSS skills. The code for this website, plus plenty of other examples, are on my <a href="https://www.github.com/clarkfennell">GITHUB</a>.</p>
+    	</div>
+    </section>
+    <section>
+    	<div id="myjscript">
+			<h2>JAVASCRIPT</h2>
+			<p>Below is a a Random Colour Generator created with JavaScript code. The code for this is located on my <a href="Https://github.com/clarkfennell/Random-Color-Generator-React-JS-Example">GITHUB</a></p>
+        <p>For more JavaScript, JQuery and AngularJS, please visit my <a href="https://www.github.com/clarkfennell">GITHUB</a>.</p>
+        </div>
+    </section>
+    <section>
+    	<div id="mycv">
+			<h2>MY CV</h2>
+<img src="images/NEWCVClarkFennell.jpg" alt="Clark Fennell's CV" href="/aboutme.html">
+		</div>
+    </section>
+    <section>
+    	<div id="contactme">
+		<h2>CONTACT</h2>
+        </div>
+    </section>
+</div>
+</body>
+</html>
