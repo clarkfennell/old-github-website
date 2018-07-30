@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "Etna";
-	src:url("file:///Macintosh HD/Users/clarkfennell/Desktop/Portfolio Website/Fonts/enta.eot");
-	src:url("file:///Macintosh HD/Users/clarkfennell/Desktop/Portfolio Website/Fonts/enta.otf" format("opentype"),
-		url("file:///Macintosh HD/Users/clarkfennell/Desktop/Portfolio Website/Fonts/etna.woff" format("woff"),
-		url("file:///Macintosh HD/Users/clarkfennell/Desktop/Portfolio Website/Fonts/etna.svg" format("svg"),
-		url("file:///Macintosh HD/Users/clarkfennell/Desktop/Portfolio Website/Fonts/etna.ttf" format("ttf"),
+	src:("../Fonts/enta.eot");
+	src:("../Fonts/enta.otf" format("opentype"),
+		("../Fonts/etna.woff" format("woff"),
+		("../Fonts/etna.svg" format("svg"),
+		("../Fonts/etna.ttf" format("ttf"),
 }
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
