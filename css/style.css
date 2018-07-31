@@ -18,26 +18,28 @@ body {
 	background-color: #EEEAE3;
 }
 
-.title {
-	font-family:"Etna", Helvetica, San-serif;
-	text-align:center;
-	color: #363151;
-}
-
 .heading {
-	font-size: 70px;
+	font-family:"Etna", Helvetica, San-serif;
+	text-align: center;
+	color: #363151;
+	font-size: 100px;
 	margin-top: -5px;
 }
 
 .heading2 {
-	font-size: 50px;
-	margin-top: -25px;
+	font-family:"Etna", Helvetica, San-serif;
+	text-align: center;
+	color: #363151;
+	font-size: 70px;
+	margin-top: -45px;
 }
 
 .small-heading {
-	font-family: "Etna", Helvetica, San-serif;
-	font-size: 30px;
-	margin top: -65px;
+	font-family:"Etna", Helvetica, San-serif;
+	text-align: center;
+	color: #363151;
+	font-size: 50px;
+	margin top: -85px;
 }
 
 .copywrite {
