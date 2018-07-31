@@ -5,25 +5,28 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <script type="text/JavaScript" src="/JS/fade.js">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
 <div class="title">
-<p class="heading">CLARK FENNELL</p>
+        <p class="heading">CLARK FENNELL</p>
         <p class="heading2">PORTFOLIO WEBSITE</p>
+        <p class="small-heading">
         <script type="text/javascript">
-          JQuery(function($){
-            var roles = ['UX/UI DESIGNER','FRONT-END DEVELOPER', 'WEB DESIGNER', 'SOFTWARE DEVELOPER'];
-            var counter = 0;
-            var $role = $('#role')
-            setInterval(FUNCTION() {
-              $ROLE.TEXT(ROLES[COUNTER++]);
-            if(counter >= roles.length){
-              counter = 0;
-            }
-          }, 400)
-        });
+          $(function () {
+            count = 0;
+            wordsArray = ["UX/UI DESIGNER", "FRONT-END DEVELOPER", "WEB DESIGNER", "SOFTWARE DEVELOPER"];
+            setInterval(function () {
+              count++;
+              $("#word").fadeOut(400, function () {
+                $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+              });
+            }, 2000);
+          });
         </script>
-        <p class="small-heading"><span id="role"></span></p>
+        <div id="word">UX/UI DESIGNER</div>
+      </p>
 </div>
 <div id="mySidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a><br>
