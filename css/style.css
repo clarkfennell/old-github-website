@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "Etna";
-	src:url("https://clarkfennell.github.io/Fonts/enta.eot");
-		url("https://clarkfennell.github.io/Fonts/enta.otf", format("opentype"),
-		url("https://clarkfennell.github.io//Fonts/etna.woff" format("woff"),
-		url("https://clarkfennell.github.io/Fonts/etna.svg" format("svg"),
-		url("https://clarkfennell.github.io/Fonts/etna.ttf" format("ttf");
+	src:url("/Fonts/enta.eot");
+	src:url("/Fonts/enta.otf") format("opentype"),
+			url("/Fonts/etna.woff") format("woff"),
+			url("/Fonts/etna.svg") format("svg"),
+			url("/Fonts/etna.ttf") format("ttf");
 }
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
@@ -25,7 +25,7 @@ body {
 	text-align:center;
 	color: #363151;
 }
-	 
+
 .heading {
 	font-size: 5.000em;
 	margin-top: -5px;
