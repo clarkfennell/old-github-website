@@ -36,7 +36,9 @@ function closeNav() {
 	document.body.style.backgroundcolor = "#EEEAE3";
 }
 
-var divs =$('div[id^="looptitle"]').hide()
+var divs = $('div[id^="looptitle"]').hide(),
+
+				i = 0;
 
 (function cycle()  {
 
