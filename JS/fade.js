@@ -42,9 +42,9 @@ var divs = $('div[id^="content-"]').hide(),
 
 (function cycle()  {
 
-					divs.eg(i).fadeIn(400)
-									 .delay(1000)
-									 .fadeOut(400, cycle);
+					divs.eq(i).show(0)
+									 .delay(2000)
+									 .hide(0, cycle);
 
 					i = ++i % divs.length;
 })();
