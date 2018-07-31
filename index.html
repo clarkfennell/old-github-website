@@ -3,40 +3,41 @@
 <head>
 <meta charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<script type="text/javascript" src="/JS/fade.js">
+<script type="text/JavaScript" src="/JS/fade.js">
 </script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
 <div class="title">
 <p class="heading">CLARK FENNELL</p>
         <p class="heading2">PORTFOLIO WEBSITE</p>
-    	<p class="small-heading">
-		<script type="text/javascript">
-			function changer() {
-				var words = ["UX/UI DESIGNER", "SOFTWARE ENGINEER", "FRONT-END DEVELOPER"];
-				var idx = Math.floor(words.length * Math.random());
-				$('#change').text(words[idx]);
-				var time = Math.floor(500 * Math.random() + 500);
-				setTimeout(changer,time)
-			}
-		</script>
-        <span id="change">FRONT-END DEVELOPER</span>
-        </p>
+        <script type="text/javascript">
+          JQuery(function($){
+            var roles = ['UX/UI DESIGNER','FRONT-END DEVELOPER', 'WEB DESIGNER', 'SOFTWARE DEVELOPER'];
+            var counter = 0;
+            var $role = $('#role')
+            setInterval(FUNCTION() {
+              $ROLE.TEXT(ROLES[COUNTER++]);
+            if(counter >= roles.length){
+              counter = 0;
+            }
+          }, 400)
+        });
+        </script>
+        <p class="small-heading"><span id="role"></span></p>
 </div>
 <div id="mySidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a><br>
-    <button onclick="fade("mainpage"); upfade("aboutme");">ABOUT ME</button><br>
-    <button onclick="fade("mainpage"); upfade("myhtmlcss");">HTMK & CSS</button><br>
-    <button onclick="fade("mainpage"); upfade("myjscript");">JAVASCRIPT</button><br>
-    <button onclick="fade("mainpage"); upfade("mycv");">MY CV</button><br>
-    <button onclick="fade("mainpage"); upfade("contactme");">CONTACT</button><br>
+    <button onclick("fade("mainpage"); upfade("aboutme");")>ABOUT ME</button><br>
+    <button onclick("fade("mainpage"); upfade("myhtmlcss");")>HTMK & CSS</button><br>
+    <button onclick("fade("mainpage"); upfade("myjscript");")>JAVASCRIPT</button><br>
+    <button onclick("fade("mainpage"); upfade("mycv");")>MY CV</button><br>
+    <button onclick("fade("mainpage"); upfade("contactme");")>CONTACT</button><br>
 </div>
     <button class="sidenav" onclick="openNav()">&#9776;</button>
 <div id ="mainpage">
 	<script type="text/javascript">
 	</script>
 	</div>
-  <section id="mainpage">
     <section id="aboutme">
       	<div>
 			<h2>ABOUT ME</h2>
@@ -59,7 +60,7 @@
     <section id="mycv">
     	<div>
 			<h2>MY CV</h2>
-<img src="../images/NEWCVClarkFennell.jpg" alt="Clark Fennell's CV" href="/aboutme.html">
+<img src="/images/NEWCVClarkFennell.jpg" alt="Clark Fennell's CV">
 		</div>
     </section>
     <section id="contactme">
@@ -67,7 +68,6 @@
 		<h2>CONTACT</h2>
         </div>
     </section>
-  </section>
 </div>
 </body>
 </html>

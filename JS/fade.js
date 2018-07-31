@@ -35,3 +35,7 @@ function closeNav() {
 	document.getElementById("mainapge").style.marginLeft = "0";
 	document.body.style.backgroundcolor = "#EEEAE3";
 }
+
+var divs = $('div[id^="content-"]').hide(),
+
+				i = 0;

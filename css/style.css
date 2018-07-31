@@ -1,18 +1,16 @@
 @font-face {
 	font-family: "Etna";
-	src:url("/Fonts/etna.eot");
+	src:url("/Fonts/enta.eot");
 	src:url("/Fonts/enta.otf") format("opentype"),
-		url("/Fonts/etna.woff") format("woff"),
-		url("/Fonts/etna.svg") format("svg"),
-		url("/Fonts/etna.ttf") format("ttf");
+			url("/Fonts/etna.woff") format("woff"),
+			url("/Fonts/etna.svg") format("svg"),
+			url("/Fonts/etna.ttf") format("ttf");
 }
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
 html {
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 100%;
-	font-size: 62.5%;
 	height: 100%;
 }
 
@@ -27,23 +25,23 @@ body {
 }
 
 .heading {
-	font-size: 5.000em;
+	font-size: 70px;
 	margin-top: -5px;
 }
 
 .heading2 {
-	font-size: 2.500em;
+	font-size: 50px;
 	margin-top: -25px;
 }
 
 .small-heading {
 	font-family: "Etna", Helvetica, San-serif;
-	font-size: 1.500em;
+	font-size: 30px;
 	margin top: -65px;
 }
 
 .copywrite {
-	font-size: 0.900em;
+	font-size: 20px;
 	opacity: 0.25:
 }
 
