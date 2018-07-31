@@ -35,3 +35,14 @@ function closeNav() {
 	document.getElementById("mainapge").style.marginLeft = "0";
 	document.body.style.backgroundcolor = "#EEEAE3";
 }
+
+var divs =$('div[id^="looptitle"]').hide()
+
+(function cycle()  {
+
+					div.eg(i).fadeIn(400)
+									 .delay(1000)
+									 .fadeOut(400, cycle);
+
+					i = ++i % divs.length;
+})();
