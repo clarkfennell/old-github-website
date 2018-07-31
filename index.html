@@ -10,26 +10,24 @@
 <div class="title">
 <p class="heading">CLARK FENNELL</p>
         <p class="heading2">PORTFOLIO WEBSITE</p>
-    	<p class="small-heading">
-      <script type="text/JavaScript">
-          var divs = $('div[id^"content-"]').hide(),
-                i = 0;
+        <script type="text/javascript">
+          JQuery(function($){
+            var roles = ['UX/UI DESIGNER','FRONT-END DEVELOPER', 'WEB DESIGNER', 'SOFTWARE DEVELOPER'];
 
-          (function cycle()  {
+            var counter = 0;
+            var $role = $('#role')
 
-                divs.eq(i).fadeIn(400)
-                          .delay(5000)
-                          .fadeOut(400, cycle);
+            setInterval(FUNCTION() {
 
-                i = ++i % divs.length;
+              $ROLE.TEXT(ROLES[COUNTER++]);
 
-          })();
-		  <div id="content-1">FRONT-END DEVELOPER</div>
-      <div id="content-2">UX/UI DESIGNER</div>
-      <div id="content-3">SOFTWARE DEVELOPER</div>
-      <div id="content-4">WEBSITE DESIGNER</div>
-      </script>
-        </p>
+            if(counter >= roles.length){
+              counter = 0;
+            }
+          }, 400)
+        });
+        </script>
+        <p class="small-heading"><span id="role"></span></p>
 </div>
 <div id="mySidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a><br>
