@@ -47,40 +47,16 @@ body {
 	opacity: 0.25:
 }
 
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #EEEAE3;
-	overflow-x: hidden;
-	padding-top: 60px;
-	transition: 0.5s;
+.box {
+		position: absolute;
+		height: 100px;
+		width: 100px;
 }
 
-.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #363151;
-	display: block;
-	transition: 0.3s;
-}
+#wrapper {position: relative;}
 
-.sidenav .closebtn {
-	position: fixed;
-	font-size: 36px;
-	margin-left: 50px;
-}
-
-#main {
-	transition: margin-left .5s;
-	padding: 20px;
-}
-
-@media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-}
+#aboutme {background-color: #EEEAE3;}
+#myhtmlcss {background-color: #EEEAE3; display: none;}
+#myjscript {background-color: #EEEAE3; display: none;}
+#mycv {background-color: #EEEAE3; display: none;}
+#contactme {background-color: #EEEAE3; display: none;}
