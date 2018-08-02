@@ -93,7 +93,7 @@ ul.topnav li.right {
 		position: center;
 }
 
-#wrapper {position: relative;}
+#wrapper {position: relative; text-align: center;}
 
 #aboutme {background-color: #EEEAE3;}
 #myhtmlcss {background-color: #EEEAE3; display: none;}

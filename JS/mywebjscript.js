@@ -9,6 +9,10 @@ var fadeoutMyJScriptBox = $("#myjscript");
 var fadeoutMyCVBox = $("#mycv");
 var fadeoutContactMeBox = $("#contactme");
 
+function startUp() {
+  $('#aboutme').fadeIn("slow")
+}
+
 function fadeinAboutMe() {
     fadeinAboutMeBox.stop(true, true).fadeIn(2000);
     if (fadeoutMyHTMLCSSBox.style.opacity = 1) {
