@@ -27,7 +27,7 @@ body {
 	text-align: center;
 	color: #363151;
 	font-size: 100px;
-	margin-top: -10%;
+	margin-top: -50%;
 }
 
 .heading2 {
@@ -35,7 +35,7 @@ body {
 	text-align: center;
 	color: #363151;
 	font-size: 70px;
-	margin-top: -10%;
+	margin-top: -50%;
 }
 
 .small-heading {
@@ -43,7 +43,7 @@ body {
 	text-align: center;
 	color: #363151;
 	font-size: 40px;
-	margin-top: -10%;
+	margin-top: -50%;
 }
 
 @media screen and (max-width: 900px) {
