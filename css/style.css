@@ -54,106 +54,7 @@ body {
 	margin-top: -100px;
 }
 
-.flex {
-	min-height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-a.navbtn {
-	color: #363151;
-	text-decoration: none;
-	-webkit-transition: 0.3s all ease;
-	transition: 0.3s ease all;
-	&:hover {
-		color: #363151;
-	}
-	&:focus {
-		color: #363151;
-	}
-}
-
-.navbtn{
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-family: 'Etna', sans-serif;
-	display: inline-block;
-	text-align: center;
-	width: 270px;
-	padding: 14px 0px;
-	border: 3px solid #363151;
-	border-radius: 2px;
-	position: relative;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
-	&:before {
-		-webkit-transition: 0.5s all ease;
-		transition: 0.5s all ease;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		right: 50%;
-		bottom: 0;
-		opacity: 0;
-		content:'';
-		background-color: #363151;
-		z-index:-2;
-	}
-	&:focus {
-		&:before {
-			transition: 0.5s all ease;
-			left: 0;
-			right: 0;
-			opacity: : 1;
-		}
-	}
-}
-
-ul.sidenav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 25%;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
-	background-color: #363151;
-}
-
-ul.topnav li a {
-	display: block;
-	color: #EEEAE3;
-	text-align: center;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-	background-color: #323151;
-	color: #EEEAE3;
-}
-
-.active {
-	background-color: #4E6F81;
-}
-
-ul.topnav li.right {
-	float: right;
-}
-
-div.content {
-
-}
-
 @media screen and (max-width: 900px) {
-	ul.sidenav {
-		width: 100%;
-		height: auto;
-		}
-		ul.sidenav li a {
-			float: left;
-			padding: 15px;
-		}
 		div.content {margin-left: 0;}
 		.heading {font-size: 80px;}
 		.heading2 {font-size: 50px;}
@@ -161,10 +62,6 @@ div.content {
 }
 
 @media screen and (max-width: 400px) {
-	ul.sidenav li a {
-		text-align: center;
-		float: none;
-	}
 	.heading {font-size: 50px;}
 	.heading2 {font-size: 35px;}
 	.small-heading {font-size: 20px;}
@@ -183,7 +80,7 @@ div.content {
 }
 
 .mainpage {
-		position: center;
+		align-items: center;
 }
 
 #wrapper {
