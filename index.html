@@ -20,7 +20,7 @@
             setInterval(function () {
               count++;
               $("#word").fadeOut(400, function () {
-                $(this).text.addClass("small-heading")(wordsArray[count % wordsArray.length]).fadeIn(400);
+                $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400).addClass("small-heading");
               });
             }, 2000);
           });
