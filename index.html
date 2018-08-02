@@ -28,6 +28,75 @@
         </script>
     <div id="word" class="small-heading">UX/UI DESIGNER</div>
 </div>
+<div>
+<button class="navbtn" onclick="function fadeinAboutMe() {
+    fadeinAboutMeBox.stop(true, true).fadeIn(2000);
+    if (fadeoutMyHTMLCSSBox.style.opacity = 1) {
+    fadeoutMyHTMLCSSBox.stop(true, true).fadeOut(2000, function() {
+          var temp = fadeinAboutMeBox;
+          fadeinAboutMeBox = fadeoutMyHTMLCSSBox;
+          fadeoutMyHTMLCSSBox = temp;
+          setTimeout(fade, 1000);
+        })
+    } else if (fadeoutMyJScriptBox.style.opacity = 1) {
+    fadeoutMyJScriptBox.stop(true, true).fadeOut(2000, function() {
+          var temp = fadeinAboutMeBox;
+          fadeinAboutMeBox = fadeoutMyJScriptBox;
+          fadeoutMyJScriptBox = temp;
+          setTimeout(fade, 1000);
+        })
+    } else if (fadeoutMyCVBox.style.opacity = 1) {
+      fadeoutMyCVBox.stop(true, true).fadeOut(2000, function() {
+            var temp = fadeinAboutMeBox;
+            fadeinAboutMeBox = fadeoutMyCVBox;
+            fadeoutMyCVBox = temp;
+            setTimeout(fade, 1000);
+        })
+    } else  if (fadeoutContactMeBox.style.opacity = 1) {
+      fadeoutContactMeBox.stop(true, true).fadeOut(2000, function() {
+            var temp = fadeinAboutMeBox;
+            fadeinAboutMeBox = fadeoutContactMeBox;
+            fadeoutContactMeBox = temp;
+            setTimeout(fade, 1000);
+        })
+    }
+  };
+  fadeinAboutMe();">ABOUT ME</button>
+  <button class="navbtn" onclick="function fadeinMyHTMLCSS() {
+      fadeinMyHTMLCSSBox.stop(true, true).fadeIn(2000);
+      if (fadeoutAboutMeBox.style.opacity = 1) {
+      fadeoutAboutMeBox.stop(true, true).fadeOut(2000, function() {
+            var temp = fadeinAboutMeBox;
+            fadeinAboutMeBox = fadeoutMyHTMLCSSBox;
+            fadeoutMyHTMLCSSBox = temp;
+            setTimeout(fade, 1000);
+          })
+      } else if (fadeoutMyJScriptBox.style.opacity = 1) {
+      fadeoutMyJScriptBox.stop(true, true).fadeOut(2000, function() {
+            var temp = fadeinAboutMeBox;
+            fadeinAboutMeBox = fadeoutMyJScriptBox;
+            fadeoutMyJScriptBox = temp;
+            setTimeout(fade, 1000);
+          })
+      } else if (fadeoutMyCVBox.style.opacity = 1) {
+        fadeoutMyCVBox.stop(true, true).fadeOut(2000, function() {
+              var temp = fadeinAboutMeBox;
+              fadeinAboutMeBox = fadeoutMyCVBox;
+              fadeoutMyCVBox = temp;
+              setTimeout(fade, 1000);
+          })
+      } else  if (fadeoutContactMeBox.style.opacity = 1) {
+        fadeoutContactMeBox.stop(true, true).fadeOut(2000, function() {
+              var temp = fadeinAboutMeBox;
+              fadeinAboutMeBox = fadeoutContactMeBox;
+              fadeoutContactMeBox = temp;
+              setTimeout(fade, 1000);
+          })
+      }
+    };
+    fadeinAboutMe();">MY HTML & CSS</button>
+  </div>
+    <br>
 <div id ="wrapper" class:"mainpage">
       <div id="aboutme" class="box">
 			<h2>ABOUT ME</h2>
