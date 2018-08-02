@@ -16,10 +16,11 @@ html {
 
 body {
 	background-color: #EEEAE3;
+	margin: 0;
 }
 
 .heading {
-	font-family:"Etna", Helvetica, San-serif;
+	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 200px;
@@ -27,7 +28,7 @@ body {
 }
 
 .heading2 {
-	font-family:"Etna", Helvetica, San-serif;
+	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 170px;
@@ -35,11 +36,42 @@ body {
 }
 
 .small-heading {
-	font-family:"Etna", Helvetica, San-serif;
+	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 100px;
 	margin-top: -100px;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #363151;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+	display: block;
+	color: #EEEAE3;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #323151;
+}
+
+ul.topnav li.right {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	ul.topnav li.right,
+	ul.topnav li {float:none;}
 }
 
 .copywrite {
@@ -48,9 +80,14 @@ body {
 }
 
 .box {
+		font-family:'Titillium Web', sans-serif;
 		position: absolute;
 		height: 500px;
 		width: 500px;
+}
+
+.mainpage {
+		position: center;
 }
 
 #wrapper {position: relative;}
