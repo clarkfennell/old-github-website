@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<script type="text/JavaScript" src="/JS/fade.js">
+<script type="text/JavaScript" src="/JS/mywebjscript.js">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
@@ -28,49 +28,28 @@
         <div id="word">UX/UI DESIGNER</div>
       </p>
 </div>
-<div id="mySidenav" class="sidenav">
-	<button class="closebtn" onclick="closeNav();">&times;</button><br>
-    <button onclick("fade("mainpage"); upfade("aboutme");")>ABOUT ME</button><br>
-    <button onclick("fade("mainpage"); upfade("myhtmlcss");")>HTMK & CSS</button><br>
-    <button onclick("fade("mainpage"); upfade("myjscript");")>JAVASCRIPT</button><br>
-    <button onclick("fade("mainpage"); upfade("mycv");")>MY CV</button><br>
-    <button onclick("fade("mainpage"); upfade("contactme");")>CONTACT</button><br>
-</div>
-    <button class="sidenav" onclick="openNav()">&#9776;</button>
-<div id ="mainpage">
-	<script type="text/javascript">
-	</script>
-	</div>
-    <section id="aboutme">
-      	<div>
+<div id ="wrapper">
+      <div id="aboutme" class="box">
 			<h2>ABOUT ME</h2>
 			<p>Age: 29<br>Location: Leeds<br>To view my CV: <a href="#">Click Here</a><br><br>I am a developer specialising in HTML, CSS, JAVA, JaveScript, SQL, Command Line, Ruby and many more.<br><br>I am also well equpit at using Adobe programs, such as, PhotoShop, Dreamweaver, Illistrator, InDesign, and other software as well.<br><br>I like to board and video games, watching indepentdant professional wrestling & a nice cup of tea.</p>
-     	</div>
-    </section>
-    <section id="myhtmlcss">
-    	<div>
+      </div>
+    	<div id="myhtmlcss" class="box">
 			<h2>HTML & CSS</h2>
 			<p>This site is just one example of my HTML, CSS & SCSS skills. The code for this website, plus plenty of other examples, are on my <a href="https://www.github.com/clarkfennell">GITHUB</a>.</p>
     	</div>
-    </section>
-    <section id="myjscript">
-    	<div>
+    	<div id="myjscript">
 			<h2>JAVASCRIPT</h2>
 			<p>Below is a a Random Colour Generator created with JavaScript code. The code for this is located on my <a href="Https://github.com/clarkfennell/Random-Color-Generator-React-JS-Example">GITHUB</a></p>
         <p>For more JavaScript, JQuery and AngularJS, please visit my <a href="https://www.github.com/clarkfennell">GITHUB</a>.</p>
-        </div>
-    </section>
-    <section id="mycv">
-    	<div>
+      </div>
+    	<div id="mycv">
 			<h2>MY CV</h2>
-<img src="/images/NEWCVClarkFennell.jpg" alt="Clark Fennell's CV">
+        <img src="/images/NEWCVClarkFennell.jpg" alt="Clark Fennell's CV">
 		</div>
-    </section>
-    <section id="contactme">
-    	<div>
+    	<div id="contactme">
 		<h2>CONTACT</h2>
         </div>
-    </section>
 </div>
+<p class="copywrite">&copy;</p>
 </body>
 </html>
