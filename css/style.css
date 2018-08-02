@@ -1,3 +1,7 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
 @font-face {
 	font-family: "Etna";
 	src:url("/Fonts/enta.eot");
@@ -9,70 +13,164 @@
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
-html {
+body {
+	font=size: 1.05em;
+	line-height: 1.25em;
+	background-color: #EEEAE3;
+	color: #1D252D;
 	font-family: 'Titillium Web', sans-serif;
+	margin: 0;
 	height: 100%;
 	width: 100%;
 }
 
-body {
-	background-color: #EEEAE3;
-	margin: 0;
-	height: 100%;
+a {
+	color: #1D252D;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+		color: #24282B;
+}
+
+img {
+	width: 100%
+}
+
+hearder {
+	background: #EEEAE3;
 	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid #1D252D;
+	z-index: 100;
+}
+
+#logo {
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	display: block;
+}
+
+nav {
+	float: center;
+	padding: 20px;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding 10px;
+}
+
+.current {
+	color: #24282B;
+}
+
+section {
+	margin: 80px auto 80px;
+	max-width: 980px;
+	position: relative;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2em;
+	color: #363151;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+}
+
+p {
+	line-height: 1.45em;
+	margin-bottom: 20px;
 }
 
 .heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
-	font-size: 100px;
-	margin-top: -50%;
+	font-size: 3.50em;
+	margin-top: --0.4em;
 }
 
 .heading2 {
 	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
-	font-size: 70px;
-	margin-top: -50%;
+	font-size: 1.70em;
+	margin-top: -0.4em;
 }
 
 .small-heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
 	color: #363151;
-	font-size: 40px;
-	margin-top: -50%;
-}
-
-@media screen and (max-width: 900px) {
-		div.content {margin-left: 0;}
-		.heading {font-size: 80px;}
-		.heading2 {font-size: 50px;}
-		.small-heading {font-size: 35px;}
-}
-
-@media screen and (max-width: 400px) {
-	.heading {font-size: 50px;}
-	.heading2 {font-size: 35px;}
-	.small-heading {font-size: 20px;}
+	font-size: 1.15em;
+	margin-top: -0.4em;
 }
 
 .copywrite {
-	font-size: 20px;
+	font-size: 0.6em;
 	opacity: 0.25:
 }
 
 .box {
 		font-family:'Titillium Web', sans-serif;
 		position: absolute;
-		height: 500px;
-		width: 500px;
+		height: 1em;
+		width: 1em;
 }
 
 .mainpage {
 		align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position:absolute;
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		border: 5px solid ;
+		right: 20px;
+		top; 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text=align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display:block;
+	}
 }
 
 #wrapper {

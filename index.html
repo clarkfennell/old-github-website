@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang-"en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+<meta name="author" content="Clark Fennell">
+<meta name="description" content="Clark Fennell's Portfolio Website">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <script type="JavaScript" src="/JS/mywebjscript.js">
-</script>
-<script type="javascript">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
-<body onload="startUp()">
+<header>
 <div class="title">
         <p class="heading">CLARK FENNELL</p>
         <p class="heading2">PORTFOLIO WEBSITE</p>
@@ -30,11 +30,19 @@
         </script>
     <div id="word" class="small-heading">UX/UI DESIGNER</div>
 </div>
-<div>
-<button class="navbtn" onclick="$(this).fadeinAboutMe;">ABOUT ME</button>
-  <button class="navbtn" onclick="$(this).fadeinMyHTMLCSS;">MY HTML & CSS</button>
-  </div>
-    <br>
+<nav>
+  <a href="#" id="menu-icon"></a>
+  <ul>
+    <li><a href="#" class="current">About Me</a></li>
+    <li><a href="#">HTML & cSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">My CV</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+</nav>
+</header>
+<section>
+<body onload="startUp()">
 <div id ="wrapper" class:"mainpage">
       <div id="aboutme" class="box">
 			<h2>ABOUT ME</h2>
@@ -58,5 +66,6 @@
         </div>
     <div class="copywrite">&copy;Clark Fennell</div>
 </div>
+</section>
 </body>
 </html>
