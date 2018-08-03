@@ -13,6 +13,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
+h2 {
+		font-size: 1.15em;
+		color: #24282B;
+		font-family: 'Titllium Web', sans-serif;
+		text-align: left;
+}
+
+p {
+	font-size: 1em;
+	color: #24282B;
+	text-align: left;
+	font-family: 'Titllium Web', sans-serif;
+}
+
+p#wrapper_controls {
+	text-align: center;
+}
+
+#wrapper_controls span {
+		padding-right: 2em;
+		cursor:pointer;
+}
+
+#wrapper div {
+	position: absolute;
+	left: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+	-ms-filter:"progid:DXImagetransform.Microsoft.Alpah(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+#wrapper div.opacity {
+		opacity: 1;
+		-ms-filter:"progid:DXImagetransform.Microsoft.Alpah(Opacity=100)";
+		filter: alpha(opacity=1);
+}
+
 .heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
@@ -42,22 +83,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	opacity: 0.25:
 }
 
-.box {
-		font-family:'Titillium Web', sans-serif;
-		position: absolute;
-		height: 1em;
-		width: 1em;
-}
-
-.mainpage {
-		align-items: center;
-}
-
 #wrapper {
 	position: relative;
-	margin-left: 25%;
-	padding: 1px 16px;
-	height: auto;
+	width: 450px;
+	height: 281px;
+	margin: 0 auto 10px;
+	align-items: center;
 }
 
 #aboutme {background-color: #EEEAE3;}

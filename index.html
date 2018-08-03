@@ -6,14 +6,22 @@
 <meta name="author" content="Clark Fennell">
 <meta name="description" content="Clark Fennell's Portfolio Website">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<script type="JavaScript" src="/JS/mywebjscript.js">
+<script type="text/JavaScript" src="/JS/mywebjscript.js">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
 <script type="text/javascript">
-  function startUp() {
-    $('#aboutme').fadeIn("slow")
-  }
+    $(document).ready(function() {
+      $("#wrapper_controls").on('click', 'span', function() {
+
+        var newDiv = $this.index();
+
+        $("#wrapper div").eq(newDiv).addClass("opaque");
+
+        $("wrapper_controls span").removeClass("selected");
+        $(this).addClass("selected";)
+      });
+    });
 </script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
@@ -36,13 +44,20 @@
     <div id="word" class="small-heading">UX/UI DESIGNER</div>
 </div>
 </header>
-<body onload="startUp()">
-<div id ="wrapper" class:"mainpage">
-      <div id="aboutme" class="box">
+<body>
+<p id="wrapper_controls">
+  <span class="selected">ABOUT ME</span>
+  <span>HTML & CSS</span>
+  <span>JAVASCRIPT</span>
+  <span>MY CV</span>
+  <span>CONTACT</span>
+</p>
+<div id ="wrapper" class="shadow">
+      <div id="aboutme">
 			<h2>ABOUT ME</h2>
 			<p>Age: 29<br>Location: Leeds<br>To view my CV: <a href="#">Click Here</a><br><br>I am a developer specialising in HTML, CSS, JAVA, JaveScript, SQL, Command Line, Ruby and many more.<br><br>I am also well equpit at using Adobe programs, such as, PhotoShop, Dreamweaver, Illistrator, InDesign, and other software as well.<br><br>I like to board and video games, watching indepentdant professional wrestling & a nice cup of tea.</p>
       </div>
-    	<div id="myhtmlcss" class="box">
+    	<div id="myhtmlcss">
 			<h2>HTML & CSS</h2>
 			<p>This site is just one example of my HTML, CSS & SCSS skills. The code for this website, plus plenty of other examples, are on my <a href="https://www.github.com/clarkfennell">GITHUB</a>.</p>
     	</div>
