@@ -10,6 +10,11 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
+<script type="text/javascript">
+  function startUp() {
+    $('#aboutme').fadeIn("slow")
+  }
+</script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
 <header>
@@ -30,18 +35,7 @@
         </script>
     <div id="word" class="small-heading">UX/UI DESIGNER</div>
 </div>
-<nav>
-  <a href="#" id="menu-icon"></a>
-  <ul>
-    <li><a href="#" class="current">About Me</a></li>
-    <li><a href="#">HTML & cSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-    <li><a href="#">My CV</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </ul>
-</nav>
 </header>
-<section>
 <body onload="startUp()">
 <div id ="wrapper" class:"mainpage">
       <div id="aboutme" class="box">
@@ -66,6 +60,5 @@
         </div>
     <div class="copywrite">&copy;Clark Fennell</div>
 </div>
-</section>
 </body>
 </html>
