@@ -1,82 +1,47 @@
-var fadeinAboutMeBox = $("#aboutme");
-var fadeinMyHTMLCSSBox = $("#myhtmlcss");
-var fadeinMyJScriptBox = $("#myjscript");
-var fadeinMyCVBox = $("#mycv");
-var fadeinContactMeBox = $("#contactme");
-var fadeoutAboutMeBox = $("#aboutme");
-var fadeoutMyHTMLCSSBox = $("#myhtmlcss");
-var fadeoutMyJScriptBox = $("#myjscript");
-var fadeoutMyCVBox = $("#mycv");
-var fadeoutContactMeBox = $("#contactme");
+var aboutmediv = $("aboutme");
+var htmlcssdiv = $("myhtmlcss");
+var jscriptdiv = $("myjscript");
+var mycvdiv = $("mycv");
+var contactmediv = $("contactme");
+var currentdiv = $("currentdiv");
 
-function startUp() {
-  $('#aboutme').fadeIn("slow")
-}
+$(function () {
+  count = 0;
+  wordsArray = ["UX/UI DESIGNER", "FRONT-END DEVELOPER", "WEB DESIGNER", "SOFTWARE DEVELOPER"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(400, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400).addClass("small-heading");
+    });
+  }, 2000);
+});
 
-function fadeinAboutMe() {
-    fadeinAboutMeBox.stop(true, true).fadeIn(2000);
-    if (fadeoutMyHTMLCSSBox.style.opacity = 1) {
-    fadeoutMyHTMLCSSBox.stop(true, true).fadeOut(2000, function() {
-          var temp = fadeinAboutMeBox;
-          fadeinAboutMeBox = fadeoutMyHTMLCSSBox;
-          fadeoutMyHTMLCSSBox = temp;
-          setTimeout(fade, 1000);
-        })
-    } else if (fadeoutMyJScriptBox.style.opacity = 1) {
-    fadeoutMyJScriptBox.stop(true, true).fadeOut(2000, function() {
-          var temp = fadeinAboutMeBox;
-          fadeinAboutMeBox = fadeoutMyJScriptBox;
-          fadeoutMyJScriptBox = temp;
-          setTimeout(fade, 1000);
-        })
-    } else if (fadeoutMyCVBox.style.opacity = 1) {
-      fadeoutMyCVBox.stop(true, true).fadeOut(2000, function() {
-            var temp = fadeinAboutMeBox;
-            fadeinAboutMeBox = fadeoutMyCVBox;
-            fadeoutMyCVBox = temp;
-            setTimeout(fade, 1000);
-        })
-    } else  if (fadeoutContactMeBox.style.opacity = 1) {
-      fadeoutContactMeBox.stop(true, true).fadeOut(2000, function() {
-            var temp = fadeinAboutMeBox;
-            fadeinAboutMeBox = fadeoutContactMeBox;
-            fadeoutContactMeBox = temp;
-            setTimeout(fade, 1000);
-        })
-    }
-  };
-  fadeinAboutMe();
+$("aboutmebtn").click(function() {
+  currentdiv.fadeout();
+  aboutmediv.fadeIn("slow");
+  currentdiv = aboutmediv;
+});
 
-  function fadeinMyHTMLCSS() {
-      fadeinAboutMyHTMLCSS.stop(true, true).fadeIn(2000);
-      if (fadeoutAboutMe.style.opacity = 1) {
-      fadeoutABoutMe.stop(true, true).fadeOut(2000, function() {
-            var temp = fadeinAboutMeBox;
-            fadeinAboutMeBox = fadeoutMyHTMLCSSBox;
-            fadeoutMyHTMLCSSBox = temp;
-            setTimeout(fade, 1000);
-          })
-      } else if (fadeoutMyJScriptBox.style.opacity = 1) {
-      fadeoutMyJScriptBox.stop(true, true).fadeOut(2000, function() {
-            var temp = fadeinAboutMeBox;
-            fadeinAboutMeBox = fadeoutMyJScriptBox;
-            fadeoutMyJScriptBox = temp;
-            setTimeout(fade, 1000);
-          })
-      } else if (fadeoutMyCVBox.style.opacity = 1) {
-        fadeoutMyCVBox.stop(true, true).fadeOut(2000, function() {
-              var temp = fadeinAboutMeBox;
-              fadeinAboutMeBox = fadeoutMyCVBox;
-              fadeoutMyCVBox = temp;
-              setTimeout(fade, 1000);
-          })
-      } else  if (fadeoutContactMeBox.style.opacity = 1) {
-        fadeoutContactMeBox.stop(true, true).fadeOut(2000, function() {
-              var temp = fadeinAboutMeBox;
-              fadeinAboutMeBox = fadeoutContactMeBox;
-              fadeoutContactMeBox = temp;
-              setTimeout(fade, 1000);
-          })
-      }
-    };
-    fadeinMyHTMLCSS();
+$("myhtmlcssbtn").click(function() {
+  currentdiv.fadeout();
+  htmlcssdiv.fadeIn("slow");
+  currentdiv = htmlcssdiv;
+});
+
+$("myjscriptbtn").click(function() {
+  currentdiv.fadeout();
+  jscriptdiv.fadeIn("slow");
+  currentdiv = jscriptdiv;
+});
+
+$("mycvbtn").click(function() {
+  currentdiv.fadeout();
+  mycvdiv.fadeIn("slow");
+  currentdiv = mycvdiv;
+});
+
+$("contactmebtn").click(function() {
+  currentdiv.fadeout();
+  contactmediv.fadeIn("slow");
+  currentdiv = contactmediv;
+});

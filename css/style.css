@@ -27,33 +27,6 @@ p {
 	font-family: 'Titllium Web', sans-serif;
 }
 
-p#wrapper_controls {
-	text-align: center;
-}
-
-#wrapper_controls span {
-		padding-right: 2em;
-		cursor:pointer;
-}
-
-#wrapper div {
-	position: absolute;
-	left: 0;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-	opacity: 0;
-	-ms-filter:"progid:DXImagetransform.Microsoft.Alpah(Opacity=0)";
-	filter: alpha(opacity=0);
-}
-
-#wrapper div.opacity {
-		opacity: 1;
-		-ms-filter:"progid:DXImagetransform.Microsoft.Alpah(Opacity=100)";
-		filter: alpha(opacity=1);
-}
-
 .heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
@@ -89,7 +62,7 @@ p#wrapper_controls {
 }
 
 #aboutme {background-color: #EEEAE3;}
-#myhtmlcss {background-color: #EEEAE3;}
-#myjscript {background-color: #EEEAE3;}
-#mycv {background-color: #EEEAE3;}
-#contactme {background-color: #EEEAE3;}
+#myhtmlcss {background-color: #EEEAE3; display: none;}
+#myjscript {background-color: #EEEAE3; display: none;}
+#mycv {background-color: #EEEAE3; display: none;}
+#contactme {background-color: #EEEAE3; display: none;}

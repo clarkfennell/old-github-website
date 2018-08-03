@@ -10,19 +10,6 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
-<script type="text/javascript">
-    $(document).ready(function() {
-      $("#wrapper_controls").on('click', 'span', function() {
-
-        var newDiv = $this.index();
-
-        $("#wrapper div").eq(newDiv).addClass("opaque");
-
-        $("wrapper_controls span").removeClass("selected");
-        $(this).addClass("selected";)
-      });
-    });
-</script>
 <Title>Clark Fennell's Portfolio Website</title>
 </head>
 <header>
@@ -45,12 +32,51 @@
 </div>
 </header>
 <body>
-<p id="wrapper_controls">
-  <span class="selected">ABOUT ME</span>
-  <span>HTML & CSS</span>
-  <span>JAVASCRIPT</span>
-  <span>MY CV</span>
-  <span>CONTACT</span>
+<br>
+<script type="text/javascript">
+var aboutmediv = $("aboutme");
+var htmlcssdiv = $("myhtmlcss");
+var jscriptdiv = $("myjscript");
+var mycvdiv = $("mycv");
+var contactmediv = $("contactme");
+var currentdiv = $("currentdiv");
+
+$("aboutmebtn").click(function() {
+  currentdiv.fadeout();
+  aboutmediv.fadeIn("slow");
+  currentdiv = aboutmediv;
+});
+
+$("myhtmlcssbtn").click(function() {
+  currentdiv.fadeout();
+  htmlcssdiv.fadeIn("slow");
+  currentdiv = htmlcssdiv;
+});
+
+$("myjscriptbtn").click(function() {
+  currentdiv.fadeout();
+  jscriptdiv.fadeIn("slow");
+  currentdiv = jscriptdiv;
+});
+
+$("mycvbtn").click(function() {
+  currentdiv.fadeout();
+  mycvdiv.fadeIn("slow");
+  currentdiv = mycvdiv;
+});
+
+$("contactmebtn").click(function() {
+  currentdiv.fadeout();
+  contactmediv.fadeIn("slow");
+  currentdiv = contactmediv;
+});
+</script>
+<p>
+  <button id="aboutmebtn">ABOUT ME</button>
+  <button id="myhtmlcssbtn">HTML & CSS</button>
+  <button id="myjscriptbtn">JAVASCRIPT</button>
+  <button id="mycvbtn">MY CV</button>
+  <button id="contactmebtn">CONTACT</button>
 </p>
 <div id ="wrapper" class="shadow">
       <div id="aboutme">
