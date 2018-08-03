@@ -13,6 +13,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
+html, body {
+	background-color: #EEEAE3;
+}
+
 h2 {
 		font-size: 1.15em;
 		color: #24282B;
