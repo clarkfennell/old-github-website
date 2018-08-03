@@ -33,51 +33,56 @@
 </header>
 <body>
 <br>
+<nav>
 <script type="text/javascript">
-var aboutmediv = $("aboutme");
-var htmlcssdiv = $("myhtmlcss");
-var jscriptdiv = $("myjscript");
-var mycvdiv = $("mycv");
-var contactmediv = $("contactme");
-var currentdiv = $("currentdiv");
+var currentdiv = '#aboutmebtn';
 
-$("aboutmebtn").click(function() {
-  currentdiv.fadeOut("slow");
-  aboutmediv.fadeIn("slow");
-  currentdiv = aboutmediv;
+$(document).ready(function() {
+  $('#aboutmebtn').click(function(){
+    cureentdiv.fadOut("slow");
+    $('#aboutme').fadeIn("slow");
+    currentdiv = '#aboutme';
+  });
 });
 
-$("myhtmlcssbtn").click(function() {
-  currentdiv.fadeOut("slow");
-  htmlcssdiv.fadeIn("slow");
-  currentdiv = htmlcssdiv;
+$(document).ready(function() {
+  $('#myhtmlcssbtn').click(function(){
+    cureentdiv.fadOut("slow");
+    $('#myhtmlcss').fadeIn("slow");
+    currentdiv = '#myhtmlcss';
+  });
 });
 
-$("myjscriptbtn").click(function() {
-  currentdiv.fadeOut("slow");
-  jscriptdiv.fadeIn("slow");
-  currentdiv = jscriptdiv;
+$(document).ready(function() {
+  $('#jscriptbtn').click(function(){
+    cureentdiv.fadOut("slow");
+    $('#myjscript').fadeIn("slow");
+    currentdiv = '#myjscript';
+  });
 });
 
-$("mycvbtn").click(function() {
-  currentdiv.fadeOut("slow");
-  mycvdiv.fadeIn("slow");
-  currentdiv = mycvdiv;
+$(document).ready(function() {
+  $('#mycvbtn').click(function(){
+    cureentdiv.fadOut("slow");
+    $('#mycv').fadeIn("slow");
+    currentdiv = '#mycv';
+  });
 });
 
-$("contactmebtn").click(function() {
-  currentdiv.fadeOut("slow");
-  contactmediv.fadeIn("slow");
-  currentdiv = contactmediv;
+$(document).ready(function() {
+  $('#contactmebtn').click(function(){
+    cureentdiv.fadOut("slow");
+    $('#contactme').fadeIn("slow");
+    currentdiv = '#contactme';
+  });
 });
 </script>
-<p class="nav">
   <button id="aboutmebtn">ABOUT ME</button>
   <button id="myhtmlcssbtn">HTML & CSS</button>
   <button id="myjscriptbtn">JAVASCRIPT</button>
   <button id="mycvbtn">MY CV</button>
   <button id="contactmebtn">CONTACT</button>
-</p>
+</nav>
 <div id ="wrapper">
       <div id="aboutme">
 			<h2>ABOUT ME</h2>
