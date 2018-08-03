@@ -66,6 +66,7 @@ p {
 	background-color: #24282B;
 	border: none;
 	color: #EEEAE3;
+	padding: 4px 2px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -73,6 +74,7 @@ p {
 	cursor: pointer;
 	margin: auto;
 }
+
 #wrapper {
 	position: relative;
 	width: 450px;
