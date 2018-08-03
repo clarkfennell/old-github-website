@@ -27,6 +27,10 @@ p {
 	font-family: 'Titllium Web', sans-serif;
 }
 
+.nav {
+	align-items: center;
+}
+
 .heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
