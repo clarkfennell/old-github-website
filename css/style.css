@@ -42,7 +42,7 @@ nav {
 	flex-flow: row wrap;
 }
 .nav {
-	justify-content: center;
+	margin: auto;
 }
 
 .heading {
