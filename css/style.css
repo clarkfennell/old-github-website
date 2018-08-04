@@ -28,10 +28,6 @@ p {
 	font-family: 'Titllium Web', sans-serif;
 }
 
-.header{
-		line-height: 0.7;
-}
-
 .heading {
 	font-family:'Etna', sans-serif;
 	text-align: center;
@@ -44,7 +40,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.70em;
-
+	margin-top: -10px;
 }
 
 .responsive {
@@ -58,6 +54,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.15em;
+	margin-top: -10px;
 }
 
 .navcenter{
