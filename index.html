@@ -6,6 +6,7 @@
 <meta name="author" content="Clark Fennell">
 <meta name="description" content="Clark Fennell's Portfolio Website">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/scss" href="/css/style.scss">
 <link rel="stylesheet" href="https://maxcdn.bottstrapcdn.com/bottstrap/3.3.7/css/bootstrap.min.css">
 <!--[if lt IE 9]><link rel="stylesheet" href="ie.css"><![endif]-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,28 +72,13 @@ $(document).ready( function() {
   } );
 } );
 </script>
-<script type="text/javascript">
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-<section>
-  <div class="topnav" id="myTopnav">
-    <a href="#" class="active" id="aboutme">ABOUT ME</a>
-    <a href="#" id="myhtmlcss">HTML & CSS</a>
-    <a href="#" id="myjscript">JAVASCRIPT</a>
-    <a href="#" id="mycv">MY CV</a>
-    <a href="#" id="contactme">CONTACT</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</section>
+<ul class="PrimaryNav with-indicator">
+  <li class="Nav-item" id="aboutme">ABOUT ME</li>
+  <li class="Nav-item" id="myhtmlcss">HTML & CSS</li>
+  <li class="Nav-item is-active" id="myjscript">JAVASCRIPT</li>
+  <li class="Nav-item" id="mycv">MY CV</li>
+  <li class="Nav-item" id="contactme">CONTACT</li>
+</ul>
 </header>
 <body>
 <br>
