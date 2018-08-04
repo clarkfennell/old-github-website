@@ -1,19 +1,27 @@
 /*
 Error: Invalid CSS after "  }": expected "}", was ""
-        on line 117 of style.scss
+        on line 116 of style.scss
 
-112:           left: 100%-$width !important;
-113:         }
-114:       }
-115:     }
-116:   }
+111:           left: 100%-$width !important;
+112:         }
+113:       }
+114:     }
+115:   }
 
 Backtrace:
-style.scss:117
+style.scss:116
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:679:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
@@ -39,4 +47,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected \"}\", was \"\"\A         on line 117 of style.scss\A \A 112:           left: 100%-$width !important;\A 113:         }\A 114:       }\A 115:     }\A 116:   }"; }
+  content: "Error: Invalid CSS after \"  }\": expected \"}\", was \"\"\A         on line 116 of style.scss\A \A 111:           left: 100%-$width !important;\A 112:         }\A 113:       }\A 114:     }\A 115:   }"; }
