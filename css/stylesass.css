@@ -50,7 +50,7 @@ a {
   width: 20%;
   background: #363151;
   top: -6px;
-  bottom: 6px;
+  bottom: -6px;
   left: 0;
   z-index: -1; }
 
