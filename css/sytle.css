@@ -1,24 +1,28 @@
 /*
-Error: Invalid CSS after "$indicator-color": expected selector or at-rule, was ": #363151"
-        on line 13 of style.scss
+Error: Invalid CSS after "        }": expected "}", was ""
+        on line 134 of style.scss
 
-8: 			url("/Fonts/etna.svg") format("svg"),
-9: 			url("/Fonts/etna.ttf") format("ttf");
-10: }
-11: 
-12: $background-color: #121212
-13: $indicator-color: #363151
-14: 
-15: $menu-items: 5;
-16: 
-17: $transition-speed: 1.3s;
-18: 
+129:             &:after{
+130:               left: 100%-$width !important;
+131:             }
+132:           }
+133:         }
 
 Backtrace:
-style.scss:13
+style.scss:134
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:679:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
@@ -40,4 +44,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$indicator-color\": expected selector or at-rule, was \": #363151\"\A         on line 13 of style.scss\A \A 8: 			url(\"/Fonts/etna.svg\") format(\"svg\"),\A 9: 			url(\"/Fonts/etna.ttf\") format(\"ttf\");\A 10: }\A 11: \A 12: $background-color: #121212\A 13: $indicator-color: #363151\A 14: \A 15: $menu-items: 5;\A 16: \A 17: $transition-speed: 1.3s;\A 18: "; }
+  content: "Error: Invalid CSS after \"        }\": expected \"}\", was \"\"\A         on line 134 of style.scss\A \A 129:             &:after{\A 130:               left: 100%-$width !important;\A 131:             }\A 132:           }\A 133:         }"; }

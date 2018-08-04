@@ -9,8 +9,8 @@ EDIT ON
 			url("/Fonts/etna.ttf") format("ttf");
 }
 
-$background-color: #121212
-$indicator-color: #363151
+$background-color: #121212;
+$indicator-color: #363151;
 
 $menu-items: 5;
 
@@ -23,7 +23,7 @@ $menu-items-loop-offset: $menu-items - 1;
   @extend %cf;
   list-style: none;
   margin: 50px auto;
-  max-width: 720px; 
+  max-width: 720px;
   padding: 0;
   width: 100%;
 }
