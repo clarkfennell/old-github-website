@@ -33,7 +33,7 @@ a {
   text-decoration: none;
   color: #363151; }
 
-* *:before *:after {
+*:after {
   box-sizing: border-box; }
 
 .PrimaryNav:after {
