@@ -27,7 +27,8 @@ $menu-items-loop-offset: $menu-items - 1;
 }
 
 .Nav-item {
-  background: #fff;
+  background: #EEEAE3;
+  color: #363151;
   display: block;
   float: left;
   margin: 0;
@@ -35,7 +36,6 @@ $menu-items-loop-offset: $menu-items - 1;
   width: $width;
   text-align: center;
   font-family: "Etna", sans-serif;
-}
 
   &:first-child {
     border-radius: 3px 0 0 3px;

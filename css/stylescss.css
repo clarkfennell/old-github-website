@@ -8,18 +8,18 @@
   max-width: 720px;
   padding: 0;
   width: 100%;
-  align-items: center;
-}
+  align-items: center; }
 
 .Nav-item {
-  background: #fff;
+  background: #EEEAE3;
+  color: #363151;
   display: block;
   float: left;
   margin: 0;
   padding: 0;
   width: 20%;
   text-align: center;
-  font-family: 'Etna', Helvetica, sans-serif;}
+  font-family: "Etna", sans-serif; }
   .Nav-item:first-child {
     border-radius: 3px 0 0 3px; }
   .Nav-item:last-child {
