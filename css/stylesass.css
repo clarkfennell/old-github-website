@@ -1,25 +1,41 @@
 /*
-Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 87 of style.sass
+Error: Invalid CSS after "relative": expected expression (e.g. 1px, bold), was ";// the menu is..."
+        on line 56 of style.sass
 
-82:     left: 0
-83:     width: $width
-84:     z-index: -1
-85: 
-86:     @for $i from 1 through $menu-items-loop-offset {
-87:       .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-88:       left:($width*$i)-$width
-89:       .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-90:       left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
-91: 
-92: * *:before *:after
+51: 
+52: &:hover
+53:     color: $indicator-color
+54: 
+55: .with-indicator
+56:     position: relative;// the menu is "relative" to the absolute position last-child pseudo elements.
+57:     z-index: 0
+58: 
+59:     .Nav-item
+60: 
+61:     &:last-child
 
 Backtrace:
-style.sass:87
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `tabulate'
+style.sass:56
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:762:in `assert_done'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:69:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:228:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script.rb:27:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:1169:in `parse_script'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:745:in `parse_property'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:707:in `parse_property_or_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:666:in `parse_line'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:539:in `build_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:558:in `block in append_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:557:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:557:in `append_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:548:in `block in build_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:541:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:541:in `build_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:558:in `block in append_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:557:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:557:in `append_children'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:417:in `_to_tree'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
@@ -41,4 +57,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 87 of style.sass\A \A 82:     left: 0\A 83:     width: $width\A 84:     z-index: -1\A 85: \A 86:     @for $i from 1 through $menu-items-loop-offset {\A 87:       .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after\A 88:       left:($width*$i)-$width\A 89:       .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before\A 90:       left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.\A 91: \A 92: * *:before *:after"; }
+  content: "Error: Invalid CSS after \"relative\": expected expression (e.g. 1px, bold), was \";// the menu is...\"\A         on line 56 of style.sass\A \A 51: \A 52: &:hover\A 53:     color: $indicator-color\A 54: \A 55: .with-indicator\A 56:     position: relative;// the menu is \"relative\" to the absolute position last-child pseudo elements.\A 57:     z-index: 0\A 58: \A 59:     .Nav-item\A 60: \A 61:     &:last-child"; }

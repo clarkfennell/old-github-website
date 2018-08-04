@@ -84,10 +84,10 @@ a
     z-index: -1
 
     @for $i from 1 through $menu-items-loop-offset {
-      .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-      left:($width*$i)-$width
-      .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
+        .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
+        left:($width*$i)-$width
+        .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+        left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
 
 * *:before *:after
     box-sizing: border-box
