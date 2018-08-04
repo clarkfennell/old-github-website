@@ -10,6 +10,29 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
+<Title>Clark Fennell's Portfolio Website</title>
+</head>
+<header>
+<div class="title">
+        <p class="heading">CLARK FENNELL</p>
+        <p class="heading2">PORTFOLIO WEBSITE</p>
+        <script type="text/javascript">
+          $(function () {
+            count = 0;
+            wordsArray = ["UX/UI DESIGNER", "FRONT-END DEVELOPER", "WEB DESIGNER", "SOFTWARE DEVELOPER"];
+            setInterval(function () {
+              count++;
+              $("#word").fadeOut(400, function () {
+                $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400).addClass("small-heading");
+              });
+            }, 2000);
+          });
+        </script>
+    <div id="word" class="small-heading">UX/UI DESIGNER</div>
+</div>
+</header>
+<body>
+<br>
 <script type="text/javascript">
 $(document).ready( function() {
   $('#content-reveal').hide();
@@ -45,48 +68,22 @@ $(document).ready( function() {
   } );
 } );
 </script>
-<Title>Clark Fennell's Portfolio Website</title>
-</head>
-<header>
-<div class="title">
-        <p class="heading">CLARK FENNELL</p>
-        <p class="heading2">PORTFOLIO WEBSITE</p>
-        <script type="text/javascript">
-          $(function () {
-            count = 0;
-            wordsArray = ["UX/UI DESIGNER", "FRONT-END DEVELOPER", "WEB DESIGNER", "SOFTWARE DEVELOPER"];
-            setInterval(function () {
-              count++;
-              $("#word").fadeOut(400, function () {
-                $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400).addClass("small-heading");
-              });
-            }, 2000);
-          });
-        </script>
-    <div id="word" class="small-heading">UX/UI DESIGNER</div>
-</div>
-</header>
-<body>
-  <br>
+<section>
 <div class="nav">
     <ul id="menu">
         <li><a href="#" id="aboutme">ABOUT ME</a>
-
         </li>
         <li><a href="#" id="myhtmlcss">HTML & CSS</a>
-
         </li>
         <li><a href="#" id="myjscript">JAVASCRIPT</a>
-
         </li>
         <li><a href="#" id="mycv">MY CV</a>
-
         </li>
         <li><a href="#" id="contactme">CONTACT</a>
-
         </li>
     </ul>
 </div>
+</section>
 <br>
 <section>
 <div id ="wrapper">
