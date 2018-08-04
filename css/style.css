@@ -64,7 +64,8 @@ p {
 
 .nav {
     margin:0px auto;
-    width:705px;
+    width: auto;
+		position: relative;
 }
 
 ul {
