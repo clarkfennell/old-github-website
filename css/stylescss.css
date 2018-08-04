@@ -8,7 +8,6 @@
   max-width: 720px;
   padding: 0;
   width: 100%;
-  font-family: 'Etna', Helvetica, sans-serif;
 }
 
 .Nav-item {
@@ -18,7 +17,8 @@
   margin: 0;
   padding: 0;
   width: 20%;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Etna', Helvetica, sans-serif;}
   .Nav-item:first-child {
     border-radius: 3px 0 0 3px; }
   .Nav-item:last-child {

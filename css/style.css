@@ -33,6 +33,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 3.50em;
+	margin: 0;
 }
 
 .heading2 {
@@ -40,6 +41,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.70em;
+	margin: 0;
 }
 
 .responsive {
@@ -53,6 +55,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.15em;
+	margin: 0;
 }
 
 .navcenter{

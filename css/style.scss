@@ -23,7 +23,6 @@ $menu-items-loop-offset: $menu-items - 1;
     max-width: 720px;
     padding: 0;
     width: 100%;
-    font-family: 'Etna', Helvetica, sans-serif;
 }
 
 .Nav-item {
@@ -34,7 +33,8 @@ $menu-items-loop-offset: $menu-items - 1;
   padding: 0;
   width: $width;
   text-align: center;
-  font-family: 'Etna', Helvetica, sans-serif;
+  font-family: "Etna", sans-serif;
+}
 
   &:first-child {
     border-radius: 3px 0 0 3px;
