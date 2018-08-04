@@ -20,10 +20,10 @@ $width: (100/$menu-items) * 1%;
 $menu-items-loop-offset: $menu-items - 1;
 
 .PrimaryNav {
-  @extend %cf; // clear the floats
+  @extend %cf;
   list-style: none;
   margin: 50px auto;
-  max-width: 720px; // As all measurements are using % this could be a flexible value.
+  max-width: 720px; 
   padding: 0;
   width: 100%;
 }
