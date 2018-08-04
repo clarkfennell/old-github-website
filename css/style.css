@@ -70,22 +70,6 @@ p {
 	opacity: 0.25:
 }
 
-.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:after {
-  left: 0;
-}
-.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:after {
-  left: 20%;
-}
-.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:after {
-  left: 40%;
-}
-.with-indicator .Nav-item:nth-child(4).is-active:after {
-  left: 60%;
-}
-.with-indicator .Nav-item:nth-child(5).is-active:after {
-  left: 80%;
-}
-
 #wrapper {
 	width: 450px;
 	height: 281px;
