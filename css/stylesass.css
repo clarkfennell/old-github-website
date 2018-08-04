@@ -4,11 +4,11 @@ Error: Inconsistent indentation: "\t  " was used for indentation, but the rest o
 
 1: @font-face
 2:     font-family: "Etna"
-3: 	  src:url("/Fonts/enta.eot")
-4:     src:url("/Fonts/enta.otf") format("opentype")
-5: 	  url("/Fonts/etna.woff") format("woff")
-6: 	  url("/Fonts/etna.svg") format("svg")
-7:     url("/Fonts/etna.ttf") format("ttf")
+3: 	  src: url("/Fonts/enta.eot")
+4:     src: url("/Fonts/enta.otf") format("opentype")
+5: 	  src: url("/Fonts/etna.woff") format("woff")
+6: 	  src: url("/Fonts/etna.svg") format("svg")
+7:     src: url("/Fonts/etna.ttf") format("ttf")
 8: 
 
 Backtrace:
@@ -38,4 +38,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: \"\t  \" was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 3 of style.sass\A \A 1: @font-face\A 2:     font-family: \"Etna\"\A 3: 	  src:url(\"/Fonts/enta.eot\")\A 4:     src:url(\"/Fonts/enta.otf\") format(\"opentype\")\A 5: 	  url(\"/Fonts/etna.woff\") format(\"woff\")\A 6: 	  url(\"/Fonts/etna.svg\") format(\"svg\")\A 7:     url(\"/Fonts/etna.ttf\") format(\"ttf\")\A 8: "; }
+  content: "Error: Inconsistent indentation: \"\t  \" was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 3 of style.sass\A \A 1: @font-face\A 2:     font-family: \"Etna\"\A 3: 	  src: url(\"/Fonts/enta.eot\")\A 4:     src: url(\"/Fonts/enta.otf\") format(\"opentype\")\A 5: 	  src: url(\"/Fonts/etna.woff\") format(\"woff\")\A 6: 	  src: url(\"/Fonts/etna.svg\") format(\"svg\")\A 7:     src: url(\"/Fonts/etna.ttf\") format(\"ttf\")\A 8: "; }
