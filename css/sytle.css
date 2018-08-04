@@ -1,23 +1,19 @@
 /*
-Error: Invalid CSS after "        }": expected "}", was ""
-        on line 134 of style.scss
+Error: Invalid CSS after "      }": expected "}", was ""
+        on line 135 of style.scss
 
-129:             &:after{
 130:               left: 100%-$width !important;
 131:             }
 132:           }
 133:         }
+134:       }
 
 Backtrace:
-style.scss:134
+style.scss:135
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:679:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
@@ -44,4 +40,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"        }\": expected \"}\", was \"\"\A         on line 134 of style.scss\A \A 129:             &:after{\A 130:               left: 100%-$width !important;\A 131:             }\A 132:           }\A 133:         }"; }
+  content: "Error: Invalid CSS after \"      }\": expected \"}\", was \"\"\A         on line 135 of style.scss\A \A 130:               left: 100%-$width !important;\A 131:             }\A 132:           }\A 133:         }\A 134:       }"; }
