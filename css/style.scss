@@ -5,15 +5,15 @@ $width: (100/$menu-items) * 1%;
 $background-color: #121212;
 $indicator-color: #363151;
 
-.PrimaryNav {
+.PrimaryNav
   list-style: none;
   margin: 50px auto;
   max-width: 720px;
   padding: 0;
   width: 100%;
-}
 
-.Nav-item {
+
+.Nav-item
   background: #363151;
   display: block;
   float: left;
@@ -23,41 +23,41 @@ $indicator-color: #363151;
   width: $width;
 
 
-  &:first-child {
+  &:first-child
     border-radius: 3px 0 0 3px;
-  }
 
-  &:last-child {
+
+  &:last-child
     border-radius: 0 3px 3px 0;
-  }
 
-  &.is-active a {
+
+  &.is-active a
     color: $indicator-color;
-  }
 
-  a {
+
+  a
     color: $background-color;
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: none;
 
-    &:hover {
+    &:hover
       color: $indicator-color;
-    }
-  }
 
-.with-indicator {
+
+
+.with-indicator
   position: relative;
 
-.Nav-item:last-child {
-  &:before, &:after {
+.Nav-item:last-child
+  &:before, &:after
     content: '';
     display: block;
     position: absolute;
-  }
 
-  &:before {
+
+  &:before
     width: 0;
     height: 0;
     border: 6px solid transparent;
@@ -65,55 +65,47 @@ $indicator-color: #363151;
     top: 0;
     left: 12.5%;
     margin-left: -3px;
-  }
 
-  &:after {
+
+  &:after
     width: $width;
     background: $indicator-color;
     top: -6px;
     bottom: -6px;
     left: 0;
     z-index: -1;
-  }
-}
+
+
 
 $menu-items: 5;
 $menu-items-loop-offset: $menu-items - 1;
 $width: (100/$menu-items) * 1%;
 
-.with-indicator {
-  @for $i from 1 through $menu-items-loop-offset {
-    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
+.with-indicator
+  @for $i from 1 through $menu-items-loop-offset
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
       left:($width*$i)-$width;
-    }
 
-   .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before {
+
+   .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
       left:($width*$i)+($width/2)-$width;
-    }
-  }
 
-  @for $i from 1 through $menu-items-loop-offset {
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
+
+
+  @for $i from 1 through $menu-items-loop-offset
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after
       left:($width*$i)-$width !important;
-    }
 
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before{
+
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
       left:($width*$i)+($width/2)-$width !important;
-    }
-  }
 
-  .Nav-item {
-    &:last-child {
-      &:hover, &.is-active {
-        &:before {
+
+  .Nav-item 
+    &:last-child
+      &:hover, &.is-active
+        &:before
           left: (100%-$width)+($width/2) !important;
-        }
-        &:after{
+
+        &:after
           left: 100%-$width !important;
-        }
-      }
-    }
-  }
-}
-}
-}
