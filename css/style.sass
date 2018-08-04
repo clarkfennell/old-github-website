@@ -33,14 +33,14 @@ $menu-items-loop-offset: $menu-items - 1
     width: $width
     text-align: center
 
-    &:first-child
-      border-radius: 3px 0 0 3px
+&:first-child
+    border-radius: 3px 0 0 3px
 
-    &:last-child
-      border-radius: 0 3px 3px 0
+&:last-child
+    border-radius: 0 3px 3px 0
 
-    &.is-active a
-      color: $indicator-color
+&.is-active a
+    color: $indicator-color
 
 a
     color: $background-color
@@ -49,14 +49,14 @@ a
     padding-bottom: 20px
     text-decoration: none
 
-  &:hover
+&:hover
     color: $indicator-color
 
 .with-indicator
     position: relative;// the menu is "relative" to the absolute position last-child pseudo elements.
     z-index: 0
 
-  .Nav-item
+    .Nav-item
 
     &:last-child
     &:before, &:after
