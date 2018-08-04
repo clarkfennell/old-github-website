@@ -9,7 +9,7 @@
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
-html, body {
+html, header, body {
 	background-color: #EEEAE3;
 	font-family: 'Titllium Web', sans-serif;
 }
