@@ -1,106 +1,106 @@
 
-$menu-items: 5;
-$width: (100/$menu-items) * 1%;
+$menu-items: 5
+$width: (100/$menu-items) * 1%
 
-$background-color: #121212;
-$indicator-color: #363151;
+$background-color: #121212
+$indicator-color: #363151
 
 .PrimaryNav
-  list-style: none;
-  margin: 50px auto;
-  max-width: 720px;
-  padding: 0;
-  width: 100%;
+  list-style: none
+  margin: 50px auto
+  max-width: 720px
+  padding: 0
+  width: 100%
 
 
 .Nav-item
-  background: #363151;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: $width;
+  background: #363151
+  display: block
+  float: left
+  margin: 0
+  padding: 0
+  text-align: center
+  width: $width
 
 
   &:first-child
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px
 
 
   &:last-child
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0
 
 
   &.is-active a
-    color: $indicator-color;
+    color: $indicator-color
 
 
   a
-    color: $background-color;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
+    color: $background-color
+    display: block
+    padding-top: 20px
+    padding-bottom: 20px
+    text-decoration: none
 
     &:hover
-      color: $indicator-color;
+      color: $indicator-color
 
 
 
 .with-indicator
-  position: relative;
+  position: relative
 
 .Nav-item:last-child
   &:before, &:after
-    content: '';
-    display: block;
-    position: absolute;
+    content: ''
+    display: block
+    position: absolute
 
 
   &:before
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-top-color: $color-indicator;
-    top: 0;
-    left: 12.5%;
-    margin-left: -3px;
+    width: 0
+    height: 0
+    border: 6px solid transparent
+    border-top-color: $color-indicator
+    top: 0
+    left: 12.5%
+    margin-left: -3px
 
 
   &:after
-    width: $width;
-    background: $indicator-color;
-    top: -6px;
-    bottom: -6px;
-    left: 0;
-    z-index: -1;
+    width: $width
+    background: $indicator-color
+    top: -6px
+    bottom: -6px
+    left: 0
+    z-index: -1
 
 
 
-$menu-items: 5;
-$menu-items-loop-offset: $menu-items - 1;
-$width: (100/$menu-items) * 1%;
+$menu-items: 5
+$menu-items-loop-offset: $menu-items - 1
+$width: (100/$menu-items) * 1%
 
 .with-indicator
   @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-      left:($width*$i)-$width;
+      left:($width*$i)-$width
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-      left:($width*$i)+($width/2)-$width;
+      left:($width*$i)+($width/2)-$width
 
 
 
   @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after
-      left:($width*$i)-$width !important;
+      left:($width*$i)-$width !important
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
-      left:($width*$i)+($width/2)-$width !important;
+      left:($width*$i)+($width/2)-$width !important
 
 
 .Nav-item
     &:last-child
       &:hover, &.is-active
         &:before
-          left: (100%-$width)+($width/2) !important;
+          left: (100%-$width)+($width/2) !important
         &:after
-          left: 100%-$width !important;
+          left: 100%-$width !important
