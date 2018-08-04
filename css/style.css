@@ -29,14 +29,14 @@ p {
 }
 
 .heading {
-	font-family:'Etna', San-serif;
+	font-family:'Etna', sans-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 3.50em;
 }
 
 .heading2 {
-	font-family:'Etna', San-serif;
+	font-family:'Etna', sans-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 1.70em;
@@ -49,7 +49,7 @@ p {
 }
 
 .small-heading {
-	font-family:'Etna', San-serif;
+	font-family:'Etna', sans-serif;
 	text-align: center;
 	color: #363151;
 	font-size: 1.15em;
