@@ -7,104 +7,106 @@
     src: url("/Fonts/etna.ttf") format("ttf")
 
 $menu-items: 5
-$width: (100/$menu-items) * 1%
 
 $background-color: #121212
 $indicator-color: #363151
 
-.PrimaryNav
-    @extend %cf
-    list-style: none
-    margin: 50px auto
-    max-width: 720px
-    padding: 0
-    width: 100%
+$transition-speed: 1.3s
 
+$width: (100/$menu-items) * 1%
+$menu-items-loop-offset: $menu-items - 1
+
+.PrimaryNav
+  @extend %cf
+  list-style: none
+  margin: 50px auto
+  max-width: 720px
+  padding: 0
+  width: 100%
 
 .Nav-item
-    background: #363151
-    display: block
-    float: left
-    margin: 0
-    padding: 0
-    text-align: center
-    width: $width
-    font-family: 'Etna', Helvetica, sans-serif
+  background: #363151
+  display: block
+  float: left
+  margin: 0
+  padding: 0
+  width: $width
+  text-align: center
 
-    &:first-child
+  &:first-child
     border-radius: 3px 0 0 3px
 
-
-    &:last-child
+  &:last-child
     border-radius: 0 3px 3px 0
 
-
-    &.is-active a
+  &.is-active a
     color: $indicator-color
 
-
-a
+  a
     color: $background-color
     display: block
     padding-top: 20px
     padding-bottom: 20px
     text-decoration: none
 
-    &:hover
+  &:hover
     color: $indicator-color
 
-.Nav-item:last-child
-    &:before
-    &:after
-    content: ''
-    display: block
-    position: absolute
-
-
-    &:before
-    width: 0
-    height: 0
-    border: 6px solid transparent
-    border-top-color: $indicator-color
-    top: 0
-    left: 12.5%
-    margin-left: -3px
-
-
-    &:after
-    width: $width
-    background: $indicator-color
-    top: -6px
-    bottom: -6px
-    left: 0
-    z-index: -1
-
-
-
-$menu-items: 5
-$menu-items-loop-offset: $menu-items - 1
-$width: (100/$menu-items) * 1%
-
 .with-indicator
-    @for $i from 1 through $menu-items-loop-offset
-        .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-        left: ($width*$i)-$width
-        .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-        left: ($width*$i)+($width/2)-$width
+  position: relative;// the menu is "relative" to the absolute position last-child pseudo elements.
+  z-index: 0
 
+  .Nav-item
 
-
-    @for $i from 1 through $menu-items-loop-offset
-        .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after
-        left: ($width*$i)-$width !important
-        .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
-        left: ($width*$i)+($width/2)-$width !important
-
-
-.Nav-item
     &:last-child
-    &:hover, &.is-active
-    &:before
-    left: (100%-$width)+($width/2) !important
-    &:after
-    left: 100%-$width !important
+      &:before, &:after
+        content: ''
+        display: block
+        position: absolute
+        pointer-events: none
+        transition: left #{$transition-speed} ease
+
+      &:before
+        border: 6px solid transparent
+        border-top-color: $indicator-color
+        width: 0
+        height: 0
+        top: 0
+        left: ($width/2)
+        margin-left: -3px
+
+      &:after
+        background: $indicator-color
+        top: -6px
+        bottom: -6px
+        left: 0
+        width: $width
+        z-index: -1
+
+  @for $i from 1 through $menu-items-loop-offset {
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
+      left:($width*$i)-$width
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
+
+* *:before *:after
+  box-sizing: border-box
+
+%cf:before
+%cf:after
+    content: " "
+    display: table
+
+%cf:after
+    clear: both
+
+html
+  background-color: $background-color
+  font-family: 'Etna', sans-serif
+  font-weight: 800
+
+
+.toggle
+    color: #363151
+    font-family: 'Etna', sans-serif
+    text-align: center

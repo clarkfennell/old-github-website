@@ -1,19 +1,26 @@
 /*
-Sass::SyntaxError: ".PrimaryNav" failed to @extend "%cf".
-The selector "%cf" was not found.
-Use "@extend %cf !optional" if the extend should be able to fail.
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 20 of style.sass
 
+15: 
+16: $width: (100/$menu-items) * 1%
+17: $menu-items-loop-offset: $menu-items - 1
+18: 
+19: .PrimaryNav
+20:   @extend %cf
+21:   list-style: none
+22:   margin: 50px auto
+23:   max-width: 720px
+24:   padding: 0
+25:   width: 100%
 
 Backtrace:
-style.sass:16
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util/subset_map.rb:105:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+style.sass:20
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `tabulate'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:417:in `_to_tree'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
@@ -34,4 +41,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: \".PrimaryNav\" failed to @extend \"%cf\".\A The selector \"%cf\" was not found.\A Use \"@extend %cf !optional\" if the extend should be able to fail.\A "; }
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 20 of style.sass\A \A 15: \A 16: $width: (100/$menu-items) * 1%\A 17: $menu-items-loop-offset: $menu-items - 1\A 18: \A 19: .PrimaryNav\A 20:   @extend %cf\A 21:   list-style: none\A 22:   margin: 50px auto\A 23:   max-width: 720px\A 24:   padding: 0\A 25:   width: 100%"; }
