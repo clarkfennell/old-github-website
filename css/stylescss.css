@@ -18,7 +18,8 @@
   padding: 0;
   width: 20%;
   text-align: center;
-  font-family: "Etna", sans-serif; }
+  font-family: "Etna", sans-serif;
+  cursor: pointer; }
   .Nav-item:first-child {
     border-radius: 3px 0 0 3px; }
   .Nav-item:last-child {
