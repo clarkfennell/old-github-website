@@ -40,7 +40,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.70em;
-	margin-top: -10px;
+	margin-top: -50px;
 }
 
 .responsive {
@@ -54,7 +54,7 @@ p {
 	text-align: center;
 	color: #363151;
 	font-size: 1.15em;
-	margin-top: -10px;
+	margin-top: -50px;
 }
 
 .navcenter{
@@ -68,6 +68,22 @@ p {
 .copywrite {
 	font-size: 0.6em;
 	opacity: 0.25:
+}
+
+.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:after {
+  left: 0;
+}
+.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:after {
+  left: 20%;
+}
+.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:after {
+  left: 40%;
+}
+.with-indicator .Nav-item:nth-child(4).is-active:after {
+  left: 60%;
+}
+.with-indicator .Nav-item:nth-child(5).is-active:after {
+  left: 80%;
 }
 
 #wrapper {
