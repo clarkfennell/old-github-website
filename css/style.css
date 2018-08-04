@@ -28,6 +28,10 @@ p {
 	font-family: 'Titllium Web', sans-serif;
 }
 
+.header{
+		line-height: 0.7;
+}
+
 .heading {
 	font-family:'Etna', sans-serif;
 	text-align: center;
