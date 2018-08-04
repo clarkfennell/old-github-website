@@ -1,73 +1,42 @@
-/*RESET*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/*
+Error: Invalid CSS after "  }": expected "}", was ""
+        on line 117 of style.scss
 
-/*MAIN*/
-@font-face {
-	font-family: "Etna";
-	src:url("/Fonts/enta.eot");
-	src:url("/Fonts/enta.otf") format("opentype"),
-			url("/Fonts/etna.woff") format("woff"),
-			url("/Fonts/etna.svg") format("svg"),
-			url("/Fonts/etna.ttf") format("ttf");
-}
+112:           left: 100%-$width !important;
+113:         }
+114:       }
+115:     }
+116:   }
 
-@import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
-
-html, body {
-	background-color: #EEEAE3;
-	font-family: 'Titllium Web', sans-serif;
-}
-
-h2 {
-		font-size: 1.15em;
-		color: #24282B;
-		font-family: 'Etna', Helvetica, sans-serif;
-		text-align: left;
-}
-
-p {
-	font-size: 1em;
-	color: #24282B;
-	text-align: left;
-	font-family: 'Titllium Web', sans-serif;
-}
-
-.heading {
-	font-family:'Etna', San-serif;
-	text-align: center;
-	color: #363151;
-	font-size: 3.50em;
-}
-
-.heading2 {
-	font-family:'Etna', San-serif;
-	text-align: center;
-	color: #363151;
-	font-size: 1.70em;
-}
-
-.small-heading {
-	font-family:'Etna', San-serif;
-	text-align: center;
-	color: #363151;
-	font-size: 1.15em;
-}
-
-.copywrite {
-	font-size: 0.6em;
-	opacity: 0.25:
-}
-
-#wrapper {
-	position: relative;
-	width: 450px;
-	height: 281px;
-	margin: 0 auto 10px;
-	align-items: center;
-}
-
-#aboutme {background-color: #EEEAE3;}
-#myhtmlcss {background-color: #EEEAE3; display: none;}
-#myjscript {background-color: #EEEAE3; display: none;}
-#mycv {background-color: #EEEAE3; display: none;}
-#contactme {background-color: #EEEAE3; display: none;}
+Backtrace:
+style.scss:117
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:679:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/sass:13:in `<top (required)>'
+C:/Ruby25-x64/bin/sass:23:in `load'
+C:/Ruby25-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected \"}\", was \"\"\A         on line 117 of style.scss\A \A 112:           left: 100%-$width !important;\A 113:         }\A 114:       }\A 115:     }\A 116:   }"; }
