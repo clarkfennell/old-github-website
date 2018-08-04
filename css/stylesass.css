@@ -1,21 +1,21 @@
 /*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 33 of style.sass
+Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 108 of style.sass
 
-28:     padding: 0
-29:     text-align: center
-30:     width: $width
-31:     font-family: 'Etna', Helvetica, sans-serif
-32: 
-33:   &:first-child
-34:     border-radius: 3px 0 0 3px
-35: 
-36: 
-37:   &:last-child
-38:     border-radius: 0 3px 3px 0
+103:     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
+104:     left: ($width*$i)+($width/2)-$width !important
+105: 
+106: 
+107: .Nav-item
+108:       &:last-child
+109:       &:hover, &.is-active
+110:       &:before
+111:       left: (100%-$width)+($width/2) !important
+112:       &:after
+113:       left: 100%-$width !important
 
 Backtrace:
-style.sass:33
+style.sass:108
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
@@ -41,4 +41,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 33 of style.sass\A \A 28:     padding: 0\A 29:     text-align: center\A 30:     width: $width\A 31:     font-family: 'Etna', Helvetica, sans-serif\A 32: \A 33:   &:first-child\A 34:     border-radius: 3px 0 0 3px\A 35: \A 36: \A 37:   &:last-child\A 38:     border-radius: 0 3px 3px 0"; }
+  content: "Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 108 of style.sass\A \A 103:     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before\A 104:     left: ($width*$i)+($width/2)-$width !important\A 105: \A 106: \A 107: .Nav-item\A 108:       &:last-child\A 109:       &:hover, &.is-active\A 110:       &:before\A 111:       left: (100%-$width)+($width/2) !important\A 112:       &:after\A 113:       left: 100%-$width !important"; }

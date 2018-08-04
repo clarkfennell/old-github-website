@@ -30,19 +30,19 @@ $indicator-color: #363151
     width: $width
     font-family: 'Etna', Helvetica, sans-serif
 
-  &:first-child
+    &:first-child
     border-radius: 3px 0 0 3px
 
 
-  &:last-child
+    &:last-child
     border-radius: 0 3px 3px 0
 
 
-  &.is-active a
+    &.is-active a
     color: $indicator-color
 
 
-  a
+a
     color: $background-color
     display: block
     padding-top: 20px
@@ -58,13 +58,13 @@ $indicator-color: #363151
     position: relative
 
 .Nav-item:last-child
-  &:before, &:after
+    &:before, &:after
     content: ''
     display: block
     position: absolute
 
 
-  &:before
+    &:before
     width: 0
     height: 0
     border: 6px solid transparent
@@ -74,7 +74,7 @@ $indicator-color: #363151
     margin-left: -3px
 
 
-  &:after
+    &:after
     width: $width
     background: $indicator-color
     top: -6px
@@ -89,25 +89,25 @@ $menu-items-loop-offset: $menu-items - 1
 $width: (100/$menu-items) * 1%
 
 .with-indicator
-  @for $i from 1 through $menu-items-loop-offset
+    @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-      left: ($width*$i)-$width
+    left: ($width*$i)-$width
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-      left: ($width*$i)+($width/2)-$width
+    left: ($width*$i)+($width/2)-$width
 
 
 
-  @for $i from 1 through $menu-items-loop-offset
+    @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after
-      left: ($width*$i)-$width !important
+    left: ($width*$i)-$width !important
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
-      left: ($width*$i)+($width/2)-$width !important
+    left: ($width*$i)+($width/2)-$width !important
 
 
 .Nav-item
-    &:last-child
+      &:last-child
       &:hover, &.is-active
-        &:before
-          left: (100%-$width)+($width/2) !important
-        &:after
-          left: 100%-$width !important
+      &:before
+      left: (100%-$width)+($width/2) !important
+      &:after
+      left: 100%-$width !important
