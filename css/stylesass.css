@@ -40,18 +40,12 @@ a {
   content: " ";
   display: table; }
 
-.PrimaryNav:after {
-  clear: both; }
-
 *:after {
   box-sizing: border-box; }
 
 .PrimaryNav:after {
   content: " ";
   display: table; }
-
-.PrimaryNav:after {
-  clear: both; }
 
 ndicator {
   position: relative; }
