@@ -85,9 +85,7 @@ $width: (100/$menu-items) * 1%;
   @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
       left:($width*$i)-$width;
-
-
-   .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
       left:($width*$i)+($width/2)-$width;
 
 
@@ -95,17 +93,14 @@ $width: (100/$menu-items) * 1%;
   @for $i from 1 through $menu-items-loop-offset
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after
       left:($width*$i)-$width !important;
-
-
     .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before
       left:($width*$i)+($width/2)-$width !important;
 
 
-  .Nav-item 
+.Nav-item
     &:last-child
       &:hover, &.is-active
         &:before
           left: (100%-$width)+($width/2) !important;
-
         &:after
           left: 100%-$width !important;
