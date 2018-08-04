@@ -43,10 +43,9 @@ a {
 .PrimaryNav:after {
   clear: both; }
 
-.with-i*, *:before, *:after {
+*:after {
   box-sizing: border-box; }
 
-.PrimaryNav:before,
 .PrimaryNav:after {
   content: " ";
   display: table; }

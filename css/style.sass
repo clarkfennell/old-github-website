@@ -54,7 +54,7 @@ a
     color: $indicator-color
 
 *
-*:before 
+*:before
 *:after
     box-sizing: border-box
 
@@ -66,10 +66,12 @@ a
 %cf:after
     clear: both
 
-.with-i*, *:before, *:after
+.with-i*
+*:before
+*:after
     box-sizing: border-box
 
-%cf:before,
+%cf:before
 %cf:after
     content: " "
     display: table
@@ -80,7 +82,8 @@ indicator
     position: relative
 
 .Nav-item:last-child
-    &:before, &:after
+    &:before
+    &:after
     content: ''
     display: block
     position: absolute
