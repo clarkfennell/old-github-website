@@ -32,10 +32,6 @@ p {
 	font-family: 'Titllium Web', sans-serif;
 }
 
-.nav {
-	margin: auto;
-}
-
 .heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
@@ -130,8 +126,8 @@ ul li a:hover + .hidden, .hidden:hover {
 .show-menu {
     font-family: 'Etna', Helvetica, sans-serif ;
     text-decoration: none;
-    color: #EEEAE3;
-    background: #24282B;
+    color: #24282B;
+    background: #EEEAE3;
     text-align: center;
     padding: 10px 0;
     display: none;
@@ -150,15 +146,26 @@ input[type=checkbox]:checked ~ #menu {
         position: static;
         display: none;
     }
+
     li {
         margin-bottom: 1px;
     }
+
     ul li, li a {
         width: 100%;
     }
+
     .show-menu {
         display:block;
     }
+
+		#wrapper {
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 0 auto 10px;
+			align-items: center;
+		}
 }
 
 #wrapper {
