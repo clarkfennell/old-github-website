@@ -1,21 +1,18 @@
 /*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
-        on line 16 of style.sass
+Error: Inconsistent indentation: "\t  " was used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 3 of style.sass
 
-11: 
-12: $background-color: #121212
-13: $indicator-color: #363151
-14: 
-15: .PrimaryNav
-16:   list-style: none
-17:   margin:     50px auto
-18:   max-width:  720px
-19:   padding:    0
-20:   width:      100%
-21: 
+1: @font-face
+2:     font-family: "Etna"
+3: 	  src:url("/Fonts/enta.eot")
+4:     src:url("/Fonts/enta.otf") format("opentype")
+5: 	  url("/Fonts/etna.woff") format("woff")
+6: 	  url("/Fonts/etna.svg") format("svg")
+7:     url("/Fonts/etna.ttf") format("ttf")
+8: 
 
 Backtrace:
-style.sass:16
+style.sass:3
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
@@ -41,4 +38,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 16 of style.sass\A \A 11: \A 12: $background-color: #121212\A 13: $indicator-color: #363151\A 14: \A 15: .PrimaryNav\A 16:   list-style: none\A 17:   margin:     50px auto\A 18:   max-width:  720px\A 19:   padding:    0\A 20:   width:      100%\A 21: "; }
+  content: "Error: Inconsistent indentation: \"\t  \" was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 3 of style.sass\A \A 1: @font-face\A 2:     font-family: \"Etna\"\A 3: 	  src:url(\"/Fonts/enta.eot\")\A 4:     src:url(\"/Fonts/enta.otf\") format(\"opentype\")\A 5: 	  url(\"/Fonts/etna.woff\") format(\"woff\")\A 6: 	  url(\"/Fonts/etna.svg\") format(\"svg\")\A 7:     url(\"/Fonts/etna.ttf\") format(\"ttf\")\A 8: "; }
