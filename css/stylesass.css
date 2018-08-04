@@ -53,7 +53,7 @@ a {
 .PrimaryNav:after {
   clear: both; }
 
-indicator {
+ndicator {
   position: relative; }
 
 .Nav-item:last-child {
