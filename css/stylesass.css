@@ -1,24 +1,31 @@
 /*
-Error: Undefined variable: "$color-indicator".
-        on line 64 of style.sass
+Error: Invalid CSS after "left:": expected pseudoclass or pseudoelement, was "($width*$i)-$width"
+        on line 87 of style.sass
 
-59: 
-60:   &:before
-61:     width: 0
-62:     height: 0
-63:     border: 6px solid transparent
-64:     border-top-color: $color-indicator
-65:     top: 0
-66:     left: 12.5%
-67:     margin-left: -3px
-68: 
-69: 
+82: $width: (100/$menu-items) * 1%
+83: 
+84: .with-indicator
+85:   @for $i from 1 through $menu-items-loop-offset
+86:     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
+87:       left:($width*$i)-$width
+88:     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+89:       left:($width*$i)+($width/2)-$width
+90: 
+91: 
+92: 
 
 Backtrace:
-style.sass:64
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+style.sass:87
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:282:in `pseudo'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:163:in `simple_selector_sequence'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:108:in `selector'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:83:in `selector_comma_sequence'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1186:in `expr!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -30,6 +37,20 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:270:in `block (3 levels) in visit_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:270:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:270:in `block (2 levels) in visit_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:266:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:266:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:266:in `block in visit_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:265:in `visit_for'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -80,4 +101,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-indicator\".\A         on line 64 of style.sass\A \A 59: \A 60:   &:before\A 61:     width: 0\A 62:     height: 0\A 63:     border: 6px solid transparent\A 64:     border-top-color: $color-indicator\A 65:     top: 0\A 66:     left: 12.5%\A 67:     margin-left: -3px\A 68: \A 69: "; }
+  content: "Error: Invalid CSS after \"left:\": expected pseudoclass or pseudoelement, was \"($width*$i)-$width\"\A         on line 87 of style.sass\A \A 82: $width: (100/$menu-items) * 1%\A 83: \A 84: .with-indicator\A 85:   @for $i from 1 through $menu-items-loop-offset\A 86:     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after\A 87:       left:($width*$i)-$width\A 88:     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before\A 89:       left:($width*$i)+($width/2)-$width\A 90: \A 91: \A 92: "; }
