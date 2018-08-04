@@ -59,14 +59,6 @@ p {
 	font-size: 1.15em;
 }
 
-.navcenter{
-	width : 100%;
-	max-width: 400px;
-	height: auto;
-	align-items: center;
-	z-index: -1;
-}
-
 .copywrite {
 	font-size: 0.6em;
 	opacity: 0.25:
