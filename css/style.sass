@@ -33,24 +33,24 @@ $menu-items-loop-offset: $menu-items - 1
     width: $width
     text-align: center
 
-    &:first-child
-      border-radius: 3px 0 0 3px
+  &:first-child
+    border-radius: 3px 0 0 3px
 
-    &:last-child
-      border-radius: 0 3px 3px 0
+  &:last-child
+    border-radius: 0 3px 3px 0
 
-    &.is-active a
-      color: $indicator-color
+  &.is-active a
+    color: $indicator-color
 
-    a
-      color: $background-color
-      display: block
-      padding-top: 20px
-      padding-bottom: 20px
-      text-decoration: none
+  a
+    color: $background-color
+    display: block
+    padding-top: 20px
+    padding-bottom: 20px
+    text-decoration: none
 
-    &:hover
-      color: $indicator-color
+  &:hover
+    color: $indicator-color
 
 .with-indicator
     position: relative;// the menu is "relative" to the absolute position last-child pseudo elements.
@@ -59,38 +59,38 @@ $menu-items-loop-offset: $menu-items - 1
   .Nav-item
 
     &:last-child
-      &:before, &:after
-        content: ''
-        display: block
-        position: absolute
-        pointer-events: none
-        transition: left #{$transition-speed} ease
+    &:before, &:after
+    content: ''
+    display: block
+    position: absolute
+    pointer-events: none
+    transition: left #{$transition-speed} ease
 
-      &:before
-        border: 6px solid transparent
-        border-top-color: $indicator-color
-        width: 0
-        height: 0
-        top: 0
-        left: ($width/2)
-        margin-left: -3px
+    &:before
+    border: 6px solid transparent
+    border-top-color: $indicator-color
+    width: 0
+    height: 0
+    top: 0
+    left: ($width/2)
+    margin-left: -3px
 
-      &:after
-        background: $indicator-color
-        top: -6px
-        bottom: -6px
-        left: 0
-        width: $width
-        z-index: -1
+    &:after
+    background: $indicator-color
+    top: -6px
+    bottom: -6px
+    left: 0
+    width: $width
+    z-index: -1
 
   @for $i from 1 through $menu-items-loop-offset {
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
-      left:($width*$i)-$width
+    left:($width*$i)-$width
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
+    left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
 
 * *:before *:after
-  box-sizing: border-box
+    box-sizing: border-box
 
 %cf:before
 %cf:after
@@ -101,9 +101,9 @@ $menu-items-loop-offset: $menu-items - 1
     clear: both
 
 html
-  background-color: $background-color
-  font-family: 'Etna', sans-serif
-  font-weight: 800
+    background-color: $background-color
+    font-family: 'Etna', sans-serif
+    font-weight: 800
 
 
 .toggle

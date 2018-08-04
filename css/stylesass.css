@@ -1,21 +1,21 @@
 /*
-Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 37 of style.sass
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 36 of style.sass
 
+31:     margin: 0
 32:     padding: 0
 33:     width: $width
 34:     text-align: center
 35: 
-36:     &:first-child
-37:       border-radius: 3px 0 0 3px
+36:   &:first-child
+37:     border-radius: 3px 0 0 3px
 38: 
-39:     &:last-child
-40:       border-radius: 0 3px 3px 0
+39:   &:last-child
+40:     border-radius: 0 3px 3px 0
 41: 
-42:     &.is-active a
 
 Backtrace:
-style.sass:37
+style.sass:36
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
@@ -41,4 +41,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 37 of style.sass\A \A 32:     padding: 0\A 33:     width: $width\A 34:     text-align: center\A 35: \A 36:     &:first-child\A 37:       border-radius: 3px 0 0 3px\A 38: \A 39:     &:last-child\A 40:       border-radius: 0 3px 3px 0\A 41: \A 42:     &.is-active a"; }
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 36 of style.sass\A \A 31:     margin: 0\A 32:     padding: 0\A 33:     width: $width\A 34:     text-align: center\A 35: \A 36:   &:first-child\A 37:     border-radius: 3px 0 0 3px\A 38: \A 39:   &:last-child\A 40:     border-radius: 0 3px 3px 0\A 41: "; }
