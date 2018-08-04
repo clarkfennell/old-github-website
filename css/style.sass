@@ -83,7 +83,7 @@ a
     width: $width
     z-index: -1
 
-  @for $i from 1 through $menu-items-loop-offset {
+@for $i from 1 through $menu-items-loop-offset {
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after
     left:($width*$i)-$width
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
