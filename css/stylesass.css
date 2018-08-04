@@ -39,7 +39,7 @@ a {
 .Nav-item:last-child {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   width: 0;
   height: 0;
   border: 6px solid transparent;
