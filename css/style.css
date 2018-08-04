@@ -46,6 +46,12 @@ p {
 	font-size: 1.70em;
 }
 
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 .small-heading {
 	font-family:'Etna', San-serif;
 	text-align: center;
