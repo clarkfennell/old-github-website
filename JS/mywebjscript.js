@@ -7,7 +7,7 @@ $(function () {
       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400).addClass("small-heading");
     });
   }, 2000);
-})
+});
 
 $(document).ready( function() {
   $('#content-reveal').hide();
