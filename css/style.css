@@ -71,6 +71,13 @@ p {
 	opacity: 0.25:
 }
 
+.content-reveal {
+		display: block;
+		align-items: center;
+		max-width: 720px;
+		width: 100%;
+}
+
 #wrapper {
 	width: 450px;
 	height: 281px;
