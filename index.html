@@ -6,49 +6,31 @@
 <meta name="author" content="Clark Fennell">
 <meta name="description" content="Clark Fennell's Portfolio Website">
 <link rel="stylesheet" type="text/css" rel="/css/indexstyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js">
-</script>
 </script>
 <script type="text/javascript">
-$(document).ready(function() {
-  $(".title").lettering();
-  $(".button").lettering();
-});
+function animate() {
+  document.querySelector('blockquote').classList.toggle('animate');
+}
 
-$(document).ready(function() {
-  animation();
-}, 1000);
+document.addEventListener('click', animate);
 
-$('.button').click(function() {
-  animation();
-});
-
-function animation() {
-  var title1 = new TimelineMax();
-  title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
-  title1.staggerFromTo(".title span", 0.5,
-  {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
-  {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
-  title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
-};
+setTimeout(animate, 1000);
 </script>
 </head>
 <body>
 <section class="container">
-  <h1>
-    <span class="title">CLARK FENNELL</span>
-    <span class="title">PORTFOTLIO WEBSITE</span>
-    <span class="title">WELCOME</span>
-  </h1>
-
-  <span class="title"><a href="/home.html">ENTER</a></div>
-    <br>
-    <br>
-  <div class="button">RESTART</div>
+  <blockquote>
+  <span>Clark</span>
+  <span>Fennell's</span>
+  <span>Portfolio</span>
+  <span>Website</span>
+  <br>
+  <br>
+  <span>Welcome</span>
+  <br>
+  <br>
+  <span><a href="/home.html">ENTER</a></span>
+</blockquote>
 </section>
 </body>
 </html>
