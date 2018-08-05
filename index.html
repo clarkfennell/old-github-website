@@ -27,10 +27,6 @@ $('.button').click(function() {
   animation();
 });
 
-$('.enterbtn').click(function() {
-  document.getElementById('#enter')
-});
-
 function animation() {
   var title1 = new TimelineMax();
   title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
@@ -49,7 +45,7 @@ function animation() {
     <span class="title">WELCOME</span>
   </h1>
 
-  <div class="button" id="enter">ENTER</div>
+  <span class="title"><a href="/home.html">ENTER</a></div>
   <div class="button">RESTART</div>
 </section>
 </body>
