@@ -2,6 +2,33 @@
 <html lang="en">
 <link rel="stylesheet" type="text/css" rel="/css/indexstyle.css">
 <link rel="stylesheet" type="text/css" rel="C:\Users\Diane\clarkfennell.github.io\css\.sass-cache\f438d035db857854fbdbe4096cf1f690c6912d06\indexstyle.scssc">
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".title").lettering();
+  $(".button").lettering();
+});
+
+$(document).ready(function() {
+  animation();
+}, 1000);
+
+$('.button').click(function() {
+  animation();
+});
+
+$('.enterbtn').click(function() {
+  document.getElementById('#enter')
+});
+
+function animation() {
+  var title1 = new TimelineMax();
+  title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
+  title1.staggerFromTo(".title span", 0.5,
+  {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+  {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+  title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
+};
+</script>
 <section class="container">
   <h1>
     <span class="title">CLARK FENNELL</span>
@@ -9,7 +36,7 @@
     <span class="title">WELCOME</span>
   </h1>
 
-  <div class="button">ENTER</div>
+  <div class="button" id="enter">ENTER</div>
   <div class="button">RESTART</div>
 </section>
 </html>
