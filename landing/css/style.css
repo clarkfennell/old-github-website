@@ -6,6 +6,15 @@
     top:50%;
 }
 
+@font-face {
+	font-family: "Etna";
+	src:url("/Fonts/enta.eot");
+	src:url("/Fonts/enta.otf") format("opentype"),
+			url("/Fonts/etna.woff") format("woff"),
+			url("/Fonts/etna.svg") format("svg"),
+			url("/Fonts/etna.ttf") format("ttf");
+}
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,,800,900');
 
 html {
@@ -25,7 +34,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Etna', sans-serif;
 }
 
 .container {
@@ -51,6 +60,7 @@ body {
 }
 
 .subtitle {
+  font-family: 'Raleway', sans-serif;
   display: block;
   text-align: center;
   text-transform: uppercase;
