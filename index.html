@@ -2,11 +2,30 @@
 <html>
 <head>
 <title>CLARK FENNELL'S PORTFOLIO WEBSITE</title>
-<link rel="stylesheet" type="text/css" src="/css/style.css">
+<link rel="stylesheet" type="text/css" src="/landing/style.css">
+<script type="text/javascript">
+$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+</script>
 </head>
 <body>
-	<div class="container-text">
-		ENTER
-	</div>
+	<div class="container">
+  <div class="title">CLARK FENNELL</div>
+  <div class="subtitle">UX/UI DESIGNER + FRONT-END DEVELOPER + WEB DESIGNER + SOFTWARE DEVELOPER</div>
+	<br>
+	<div class="subtitle"><a href="/home.html">enter</a></div>
+</div>
 </body>
 </html>

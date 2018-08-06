@@ -90,23 +90,3 @@ p {
 #myjscript {background-color: #EEEAE3;}
 #mycv {background-color: #EEEAE3;}
 #contactme {background-color: #EEEAE3;}
-
-@keyframes filling {
-  from{
-    background-position: center 25%;
-  }
-  to {
-    background-position: center 50%;
-  }
-}
-
-.container-text {
-  background-image:  url('/images/myface.jpg');
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color:  #FFFFFF;
-  padding-top: 20px;
-  font-size: 170px;
-  font-family: 'Etna', sans-serif;
-  animation: filling 3s ease forwards;
-}
