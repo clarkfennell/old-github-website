@@ -91,3 +91,20 @@ p {
 #myjscript {background-color: #EEEAE3;}
 #mycv {background-color: #EEEAE3;}
 #contactme {background-color: #EEEAE3;}
+
+.contactboxtext {
+    float: right;
+    width: 300px;
+    border: 0;
+    padding: 10px;
+		overflow: auto;
+}
+
+.contactboximg {
+	float:left;
+	max-width: 300px;
+	height:auto;
+	border:0;
+	padding:10px;
+	overflow: auto;
+}
