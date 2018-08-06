@@ -10,8 +10,7 @@
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
 html, header, body {
-	background: -webkit-linear-gradient(#ebece7, white);
-  background: linear-gradient(#ebece7, white);
+	background: #363151;
 	font-family: 'Titllium Web', sans-serif;
 }
 
