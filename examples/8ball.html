@@ -6,8 +6,13 @@
 </header>
 <body>
   <script type="text/javascript">
+  function 8ball() {
+
   var userName = prompt("Please enter you name below","");
-  var userQuestion = prompt(Ask the Magic 8-Ball a question,"");
+  var userQuestion = prompt("Thank you, " + userName +". Ask the Magic 8-Ball a question!","");
+  var txtQuestion;
+  var txtAnswer;
+  var ballAnswer = eightBall;
 
   const randomNumber = Math.floor(Math.random() * 8);
   let eightBall = '';
@@ -39,9 +44,22 @@
     case 8:
       eightBall ='It is certain';
       break;
-    };
-console.log(userName + " asked:" + userQuestion);
-console.log("The 8-Ball's answer:" + eightBall);
+    }
+  }
+
+
+  if (userName == null || userName == "") {
+    txt = "User cancelled prompt.";
+  } else { userQuestion;
+};
+
+  if (userQuestion == null || userQuestion == "")
+    txtAnswer = "User called promt."
+  } else { ballAnswer;
+};
+
 </script>
+<button onclick="8ball()">ASK THE 8 BALL</button>
+<p id="ballAnswer"></p>
 </body>
 </html>
