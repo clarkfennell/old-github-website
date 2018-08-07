@@ -9,8 +9,14 @@
 
 @import url('https//fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titllium+Web');
 
-html, header, body {
-	background-color: #363151;
+html {
+	background: -webkit-linear-gradient(#ebece7, white);
+  background: linear-gradient(#ebece7, white);
+}
+
+header, body {
+	background-color: rgba(0, 0, 0, 0.8);
+	color:white;
 	font-family: 'Titllium Web', sans-serif;
 }
 
