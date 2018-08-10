@@ -8,59 +8,72 @@
   <script type="text/javascript">
   function eightBallApp() {
 
-  var userName = prompt("Please enter you name below","");
-  var userQuestion = prompt("Thank you, " + userName +". Ask the Magic 8-Ball a question!","");
-  var txtQuestion;
-  var txtAnswer;
+  var userFirstName = document.getElementById("frm1").fname;
+  var userLastName = document.getElementById("frm1").lname;
+  var userQuestion = document.getElementById("frm1").question;
+  var txtAnswer = "";
   var ballAnswer = eightBall;
 
-  if (userName == null || userName == "") {
-    txt = "User cancelled prompt.";
-  } else { userQuestion;
-};
-
-  if (userQuestion == null || userQuestion == "")
-    txtAnswer = "User called promt."
-  } else { ballAnswer;
-};
+  if (userFirstName == null || userFirstName == "") {
+    txtAnswer = "Please enter your first name";
+  } else if (userLastName == null || userLastName == "") {
+    txtAnswer = "Please enter your last name";
+  } else if (userQuestion == null || userQuestion == "") {
+    txtAnswer = "Please ask the 8 Ball a question";
+  };
 
   const randomNumber = Math.floor(Math.random() * 8);
-  let eightBall = '';
+  let eightBall = $('#content-reveal').html('<img src="/images/8ball.png">');
   switch(randomNumber) {
     case 0:
-      eightBall ='It is certain';
+      eightBall = $('#content-reveal').html('<img src="/images/ABSOLUTELY.png">');
       break;
     case 1:
-      eightBall ='It is decidedly so';
+      eightBall = $('#content-reveal').html('<img src="/images/ASKAGAIN.png">');
       break;
     case 2:
-      eightBall ='Reply hazy try again';
+      eightBall = $('#content-reveal').html('<img src="/images/COUNTONIT.png">');
       break;
     case 3:
-      eightBall ='Cannot predict now';
+      eightBall = $('#content-reveal').html('<img src="/images/GOFORIT.png">');
       break;
     case 4:
-      eightBall ='My sources say no';
+      eightBall = $('#content-reveal').html('<img src="/images/ITWILLPASS.png">');
       break;
     case 5:
-      eightBall ='Outlook not so good';
+      eightBall = $('#content-reveal').html('<img src="/images/MAYBE.png">');
       break;
     case 6:
-      eightBall ='Signs point to yes';
+      eightBall = $('#content-reveal').html('<img src="/images/NO.png">');
       break;
     case 7:
-      eightBall ='It is certain';
+      eightBall = $('#content-reveal').html('<img src="/images/NODOUBT.png">');
       break;
     case 8:
-      eightBall ='It is certain';
+      eightBall = $('#content-reveal').html('<img src="/images/NOTNOW.png">');
+      break;
+    case 9:
+      eightBall = $('#content-reveal').html('<img src="/images/VERYLIKELY.png">');
+      break;
+    case 10:
+      eightBall = $('#content-reveal').html('<img src="/images/YES.png">');
       break;
     }
 };
 
-document.getElementById("answer").innerHTML = ballAnswer;
-
 </script>
-<button onclick="eightBallApp()">ASK THE 8 BALL</button>
-<p id="answer"></p>
+<div class="img" id="content-reveal">
+</div>
+<br>
+<form id="frm1" name="eightballform" action="/action.php">
+  First Name: <input type="text" name="fname" value="">]
+  <br>"
+  Last Name: <input type="text" name="lname" value="">
+  <br>
+  Ask the 8 Ball your quesion: <input type="text" name="question" value="">
+  <br>
+  <br>
+  <input type="submit" value="ASK THE 8 BALL">
+</form>
 </body>
 </html>
