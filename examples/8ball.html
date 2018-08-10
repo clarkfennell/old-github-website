@@ -12,7 +12,6 @@
   var userLastName = document.getElementById("frm1").lname;
   var userQuestion = document.getElementById("frm1").question;
   var txtAnswer = "";
-  var ballAnswer = eightBall;
 
   if (userFirstName == null || userFirstName == "") {
     txtAnswer = "Please enter your first name";
@@ -22,47 +21,84 @@
     txtAnswer = "Please ask the 8 Ball a question";
   };
 
-  const randomNumber = Math.floor(Math.random() * 8);
-  let eightBall = $('#content-reveal').html('<img src="/images/8ball.png">');
+  const randomNumber = Math.floor(Math.random() * 10);
+  let eightBall = '';
   switch(randomNumber) {
     case 0:
-      eightBall = $('#content-reveal').html('<img src="/images/ABSOLUTELY.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/ABSOLUTELY.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 1:
-      eightBall = $('#content-reveal').html('<img src="/images/ASKAGAIN.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/ASKAGAIN.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 2:
-      eightBall = $('#content-reveal').html('<img src="/images/COUNTONIT.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/COUNTONIT.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 3:
-      eightBall = $('#content-reveal').html('<img src="/images/GOFORIT.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/GOFORIT.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 4:
-      eightBall = $('#content-reveal').html('<img src="/images/ITWILLPASS.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/ITWILLPASS.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 5:
-      eightBall = $('#content-reveal').html('<img src="/images/MAYBE.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/MAYBE.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 6:
-      eightBall = $('#content-reveal').html('<img src="/images/NO.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/NO.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 7:
-      eightBall = $('#content-reveal').html('<img src="/images/NODOUBT.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/NODOUBT.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 8:
-      eightBall = $('#content-reveal').html('<img src="/images/NOTNOW.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/NOTNOW.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 9:
-      eightBall = $('#content-reveal').html('<img src="/images/VERYLIKELY.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/VERYLIKELY.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
     case 10:
-      eightBall = $('#content-reveal').html('<img src="/images/YES.png">');
+      eightBall = $('#answer8ballimg').html('<img src="/images/YES.png">');
+      $('#answer8ballimg').fadeIn(500);
       break;
-    }
+    };
+
+    $('input[name=submit]')
+        .click(
+             function ()
+             {
+                 $(this).hide();
+                 $('input[name="fname"]').hide();
+                 $('input[name="lname"]').hide();
+                 $('input[name="question"]').hide();
+                 $('input[name=reset]').show();
+             }
+        );
 };
 
+function reseteightBallApp() {
+  var userFirstName = document.getElementById("frm1").fname;
+  var userLastName = document.getElementById("frm1").lname;
+  var userQuestion = document.getElementById("frm1").question;
+  var txtAnswer = "";
+  var eightball = "";
+
+  $("#answer8ballimg").fadeOut(500);
+};
 </script>
-<div class="img" id="content-reveal">
+<div id="container">
+  <div id="blank8ballimg">
+    <img src="/images/8ball.png">
+  </div>
+  <div id="answer8ballimg">
+  </div>
 </div>
 <br>
 <form id="frm1" name="eightballform" action="/action.php">
@@ -73,7 +109,8 @@
   Ask the 8 Ball your quesion: <input type="text" name="question" value="">
   <br>
   <br>
-  <input type="submit" value="ASK THE 8 BALL">
+  <button type="submit" name="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
+  <button type="reset" name="reset" onclick="reseteightBallApp()">ASK ANOTHER QUESTION</button>
 </form>
 </body>
 </html>
