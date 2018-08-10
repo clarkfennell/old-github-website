@@ -70,7 +70,7 @@
       break;
     };
 
-    $('input[name=submit]')
+    $('button[id="submit"]')
         .click(
              function ()
              {
@@ -78,19 +78,29 @@
                  $('input[name="fname"]').hide();
                  $('input[name="lname"]').hide();
                  $('input[name="question"]').hide();
-                 $('input[name=reset]').show();
+                 $('button[id="reset"]').show();
              }
         );
 };
 
 function reseteightBallApp() {
-  var userFirstName = document.getElementById("frm1").fname;
-  var userLastName = document.getElementById("frm1").lname;
-  var userQuestion = document.getElementById("frm1").question;
   var txtAnswer = "";
   var eightball = "";
 
   $("#answer8ballimg").fadeOut(500);
+
+  $('button[id="reset"]')
+  .click(
+    function ()
+    {
+        $(this.hide();
+        $('input[name="fname"]').show();
+        $('input[name="lname"]').show();
+        $('input[name="question"]').show();
+        $('button[id="reset"]').hide();
+    )
+  }
+);
 };
 </script>
 <div id="container">
@@ -109,8 +119,8 @@ function reseteightBallApp() {
   Ask the 8 Ball your quesion: <input type="text" name="question" value="">
   <br>
   <br>
-  <input type="button" id="submit" name="submit" value="ASK THE 8 BALL" onclick="eightBallApp()">
-  <input type="button" id="reset" name="reset" value="ASK ANOTHER QUESTION" onclick="reseteightBallApp()">
+  <button id="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
+  <button id="reset" onclick="reseteightBallApp()">ASK ANOTHER QUESTION</button>
 </form>
 <div id="txtAnswer">
 </div>
