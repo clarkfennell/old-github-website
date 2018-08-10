@@ -11,14 +11,14 @@
   var userFirstName = document.getElementById("frm1").fname;
   var userLastName = document.getElementById("frm1").lname;
   var userQuestion = document.getElementById("frm1").question;
-  var txtAnswer = "";
+  var document.getElementById("txtAnswer").innerHTML = txtAnswer;
 
   if (userFirstName == null || userFirstName == "") {
-    txtAnswer = "Please enter your first name";
+    txtAnswer = '<p class="errortxt">Please enter your first name</p>';
   } else if (userLastName == null || userLastName == "") {
-    txtAnswer = "Please enter your last name";
+    txtAnswer = '<p class="errortxt">Please enter your last name</p>';
   } else if (userQuestion == null || userQuestion == "") {
-    txtAnswer = "Please ask the 8 Ball a question";
+    txtAnswer = '<p class="errortxt">Please ask the 8 Ball a question</p>';
   };
 
   const randomNumber = Math.floor(Math.random() * 10);
@@ -112,5 +112,7 @@ function reseteightBallApp() {
   <input type="button" name="submit" value="ASK THE 8 BALL" onclick="eightBallApp()">
   <input type="button" name="reset" value="ASK ANOTHER QUESTION" onclick="reseteightBallApp()">
 </form>
+<div id="txtAnswer">
+</div>
 </body>
 </html>
