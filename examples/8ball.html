@@ -8,19 +8,17 @@
   <script type="text/javascript">
   function eightBallApp() {
 
-  var userFirstName = document.getElementById("frm1").fname;
-  var userLastName = document.getElementById("frm1").lname;
-  var userQuestion = document.getElementById("frm1").question;
-  var document.getElementById("txtAnswer").innerHTML = txtAnswer;
+  var userFirstName = document.getElementById('#frm1').fname;
+  var userLastName = document.getElementById('#frm1').lname;
+  var userQuestion = document.getElementById('#frm1').question;
 
   if (userFirstName == null || userFirstName == "") {
-    txtAnswer = '<p class="errortxt">Please enter your first name</p>';
+  document.getElementById('#txtAnswer').html('<p class="errortxt">Please enter your first name</p>');
   } else if (userLastName == null || userLastName == "") {
-    txtAnswer = '<p class="errortxt">Please enter your last name</p>';
+  document.getElementById('#txtAnswer').html('<p class="errortxt">Please enter your last name</p>');
   } else if (userQuestion == null || userQuestion == "") {
-    txtAnswer = '<p class="errortxt">Please ask the 8 Ball a question</p>';
-  };
-
+  document.getElementById('#txtAnswer').html('<p class="errortxt">Please ask the 8 Ball a question</p>');
+} else {
   const randomNumber = Math.floor(Math.random() * 10);
   let eightBall = '';
   switch(randomNumber) {
@@ -68,19 +66,21 @@
       eightBall = $('#answer8ballimg').html('<img src="/images/YES.png">');
       $('#answer8ballimg').fadeIn(500);
       break;
-    };
+    }
 
-    $('button[id="submit"]')
+    $document.getElementById('#submit') {
         .click(
              function ()
              {
                  $(this).hide();
-                 $('input[name="fname"]').hide();
-                 $('input[name="lname"]').hide();
-                 $('input[name="question"]').hide();
-                 $('button[id="reset"]').show();
+                 userFirstName.hide();
+                 userLastName.hide();
+                 userQuestion.hide();
+                 document.getElementById('#reset').show();
              }
         );
+}
+}
 };
 
 function reseteightBallApp() {
@@ -89,18 +89,18 @@ function reseteightBallApp() {
 
   $("#answer8ballimg").fadeOut(500);
 
-  $('button[id="reset"]')
-  .click(
-    function ()
-    {
-        $(this.hide();
-        $('input[name="fname"]').show();
-        $('input[name="lname"]').show();
-        $('input[name="question"]').show();
-        $('button[id="reset"]').hide();
-    )
-  }
-);
+  $document.getElementById('#reset') {
+      .click(
+           function ()
+           {
+               $(this).hide();
+               userFirstName.show();
+               userLastName.show();
+               userQuestion.show();
+               document.getElementById('#submit').show();
+           }
+      );
+}
 };
 </script>
 <div id="container">
@@ -111,12 +111,12 @@ function reseteightBallApp() {
   </div>
 </div>
 <br>
-<form id="frm1" name="eightballform" action="/action_page.php">
-  First Name: <input type="text" name="fname" value="">
+<form id="frm1" name="eightballform">
+  First Name: <input type="text" id="fname" value="">
   <br>
-  Last Name: <input type="text" name="lname" value="">
+  Last Name: <input type="text" id="lname" value="">
   <br>
-  Ask the 8 Ball your quesion: <input type="text" name="question" value="">
+  Ask the 8 Ball your quesion: <input type="text" id="question" value="">
   <br>
   <br>
   <button id="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
