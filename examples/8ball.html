@@ -90,7 +90,7 @@ switch(randomNumber) {
 </script>
   <button id="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
   <script>
-  function reseteightBallApp() {
+  function resetApp() {
     document.getElementById("txtAnswer").innerHTML = "";
 
     $("#answer8ballimg").fadeOut(500);
@@ -106,7 +106,7 @@ switch(randomNumber) {
   }
   };
   </script>
-  <button id="reset" onclick="reseteightBallApp()">ASK ANOTHER QUESTION</button>
+  <button id="reset" onclick="resetApp()">ASK ANOTHER QUESTION</button>
 <div>
   <h1 id="txtanswer"></h1>
 </div>
