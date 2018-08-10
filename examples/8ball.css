@@ -1,22 +1,27 @@
-.container {
+#container {
     position: relative;
 }
 
-.blank8ballimg {
+#blank8ballimg {
+    position: absolute;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 3px;
     width: 100%;
     height: 100%;
 }
 
-.answer8ballimg {
+#answer8ballimg {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.submit {
+#submit {
 
 }
 
-.reset {
+#reset {
   opacity: 0;
 }
