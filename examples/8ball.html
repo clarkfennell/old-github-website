@@ -5,99 +5,6 @@
   <link rel="stylesheet" type="text/css" src="/examples/8ball.css">
 </header>
 <body>
-  <script type="text/javascript">
-  function eightBallApp() {
-
-  var userFirstName = prompt("Please enter your first name", "<Your first name goes here>");
-  var userLastName = prompt("Please enter your last name", "<Your last name goes here>");
-  var userQuestion = prompt("Please ask the 8 Ball a question", "<Your question goes here>");
-
-  if (userFirstName == null || userFirstName == "") {
-  document.getElementById('#txtAnswer').innerHTML = "Please enter your first name.";
-  } else if (userLastName == null || userLastName == "") {
-  document.getElementById('#txtAnswer').innerHTML = "Please enter your last name";
-  } else if (userQuestion == null || userQuestion == "") {
-  document.getElementById('#txtAnswer').innerHTML = "Please ask the 8 Ball a question";
-} else {
-  const randomNumber = Math.floor(Math.random() * 10);
-  var eightBall = '';
-  switch(randomNumber) {
-    case 0:
-      eightBall = $('#answer8ballimg').html('<img src="/images/ABSOLUTELY.png">');
-      eightball.fadeIn(500);
-      break;
-    case 1:
-      eightBall = $('#answer8ballimg').html('<img src="/images/ASKAGAIN.png">');
-      eightball.fadeIn(500);
-      break;
-    case 2:
-      eightBall = $('#answer8ballimg').html('<img src="/images/COUNTONIT.png">');
-      eightball.fadeIn(500);
-      break;
-    case 3:
-      eightBall = $('#answer8ballimg').html('<img src="/images/GOFORIT.png">');
-      eightball.fadeIn(500);
-      break;
-    case 4:
-      eightBall = $('#answer8ballimg').html('<img src="/images/ITWILLPASS.png">');
-      eightball.fadeIn(500);
-      break;
-    case 5:
-      eightBall = $('#answer8ballimg').html('<img src="/images/MAYBE.png">');
-      eightball.fadeIn(500);
-      break;
-    case 6:
-      eightBall = $('#answer8ballimg').html('<img src="/images/NO.png">');
-      $('#answer8ballimg').fadeIn(500);
-      break;
-    case 7:
-      eightBall = $('#answer8ballimg').html('<img src="/images/NODOUBT.png">');
-      $('#answer8ballimg').fadeIn(500);
-      break;
-    case 8:
-      eightBall = $('#answer8ballimg').html('<img src="/images/NOTNOW.png">');
-      eightball.fadeIn(500);
-      break;
-    case 9:
-      eightBall = $('#answer8ballimg').html('<img src="/images/VERYLIKELY.png">');
-      eightball.fadeIn(500);
-      break;
-    case 10:
-      eightBall = $('#answer8ballimg').html('<img src="/images/YES.png">');
-      eightball.fadeIn(500);
-      break;
-    }
-
-    document.getElementById('#submit') {
-        .click(
-             function ()
-             {
-                 $(this).hide();
-                 document.getElementById('#reset').show();
-             }
-        );
-}
-}
-    document.getElementById("txtAnswer").innerHTML = "Hello " + userFirstName + " " + userLastName + "! You asked the 8 ball the following: " + userQuestion;
-};
-
-function reseteightBallApp() {
-  var txtAnswer = "";
-  var eightball = "";
-
-  $("#answer8ballimg").fadeOut(500);
-
-  document.getElementById('#reset') {
-      .click(
-           function ()
-           {
-               $(this).hide();
-               document.getElementById('#submit').show();
-           }
-      );
-}
-};
-</script>
 <div id="container">
   <div id="blank8ballimg">
     <img src="/images/8ball.png">
@@ -106,7 +13,99 @@ function reseteightBallApp() {
   </div>
 </div>
 <br>
+<script type="text/javascript">
+function eightBallApp() {
+
+var userFirstName = prompt("Please enter your first name", "<Your first name goes here>");
+var userLastName = prompt("Please enter your last name", "<Your last name goes here>");
+var userQuestion = prompt("Please ask the 8 Ball a question", "<Your question goes here>");
+
+if (userFirstName == null || userFirstName == "") {
+document.getElementById('#txtAnswer').innerHTML = "Please enter your first name.";
+} else if (userLastName == null || userLastName == "") {
+document.getElementById('#txtAnswer').innerHTML = "Please enter your last name";
+} else if (userQuestion == null || userQuestion == "") {
+document.getElementById('#txtAnswer').innerHTML = "Please ask the 8 Ball a question";
+} else {
+const randomNumber = Math.floor(Math.random() * 10);
+switch(randomNumber) {
+  case 0:
+    $('#answer8ballimg').html('<img src="/images/ABSOLUTELY.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 1:
+    $('#answer8ballimg').html('<img src="/images/ASKAGAIN.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 2:
+    $('#answer8ballimg').html('<img src="/images/COUNTONIT.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 3:
+    $('#answer8ballimg').html('<img src="/images/GOFORIT.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 4:
+    $('#answer8ballimg').html('<img src="/images/ITWILLPASS.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 5:
+    $('#answer8ballimg').html('<img src="/images/MAYBE.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 6:
+    $('#answer8ballimg').html('<img src="/images/NO.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 7:
+    $('#answer8ballimg').html('<img src="/images/NODOUBT.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 8:
+    $('#answer8ballimg').html('<img src="/images/NOTNOW.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 9:
+    $('#answer8ballimg').html('<img src="/images/VERYLIKELY.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  case 10:
+    $('#answer8ballimg').html('<img src="/images/YES.png">');
+    $('#answer8ballimg').fadeIn(500);
+    break;
+  }
+
+  document.getElementById('#submit') {
+      .click(
+           function ()
+           {
+               $(this).addClass('display: none;');
+               document.getElementById('#reset').classList.remove('display: none;');
+           }
+      );
+}
+}
+  document.getElementById("txtAnswer").innerHTML = "Hello " + userFirstName + " " + userLastName + "! You asked the 8 ball the following: " + userQuestion;
+};
+</script>
   <button id="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
+  <script>
+  function reseteightBallApp() {
+    document.getElementById("txtAnswer").innerHTML = "";
+
+    $("#answer8ballimg").fadeOut(500);
+
+    document.getElementById('#reset') {
+        .click(
+             function ()
+             {
+                 $(this).addClass('display: none;');
+                 document.getElementById('#submit').classList.remove('display: none;');
+             }
+        );
+  }
+  };
+  </script>
   <button id="reset" onclick="reseteightBallApp()">ASK ANOTHER QUESTION</button>
 <div>
   <h1 id="txtanswer"></h1>
