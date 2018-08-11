@@ -65,7 +65,7 @@ html, body{
   transform: translate(-50%,-50%) rotate(5deg);
   position: absolute;
 	width: 0px;
-	height: -10px;
+	height: 0px;
   left: 50%;
   top: 60%;
 	border-left: 55px solid transparent;
