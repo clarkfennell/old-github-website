@@ -44,16 +44,6 @@ $(function() {$('.eball').mouseenter(function(){
     $('.textbox').html(getRandomWord());
     });
 
-    var onClick = function()
-  {
-    $("#answer").hide();
-    var question = prompt("What do you want to know?");
-    magic8Ball.getAnswer(question);
-  };
-
-  $("#questionButton").click(onClick);
-});
-
 });
 </script>
 <div class="shadow"></div>
@@ -66,6 +56,5 @@ $(function() {$('.eball').mouseenter(function(){
   <div class="textbox"></div>
 </div>
 </div>
-<button class="questionButton">Ask the 8 Ball</button>
 </body>
 </html>
