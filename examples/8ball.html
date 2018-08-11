@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <meta name="author" content="Clark Fennell">
 <meta name="description" content="Magic 8 Ball">
-<link rel="stylesheet" type="text/css" href="/css/8ball.css">
+<link rel="stylesheet" type="text/css" href="/examples/8ball.css">
 <link rel="stylesheet" href="https://maxcdn.bottstrapcdn.com/bottstrap/3.3.7/css/bootstrap.min.css">
 <!--[if lt IE 9]><link rel="stylesheet" href="ie.css"><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -44,6 +44,16 @@ $(function() {$('.eball').mouseenter(function(){
     $('.textbox').html(getRandomWord());
     });
 
+    var onClick = function()
+  {
+    $("#answer").hide();
+    var question = prompt("What do you want to know?");
+    magic8Ball.getAnswer(question);
+  };
+
+  $("#questionButton").click(onClick);
+});
+
 });
 </script>
 <div class="shadow"></div>
@@ -56,5 +66,6 @@ $(function() {$('.eball').mouseenter(function(){
   <div class="textbox"></div>
 </div>
 </div>
+<button class="questionButton">Ask the 8 Ball</button>
 </body>
 </html>
