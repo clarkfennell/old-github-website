@@ -38,9 +38,10 @@
     var getRandomWord = function () {
       return words[Math.floor(Math.random() * words.length)];
     };
-$(function() {$('.askbutton').onclick(function(){
+$(function() {$('.eball').mouseenter(function(){
     $('.textbox').html(getRandomWord());
-});
+    });
+
 });
 </script>
 <div class="shadow"></div>
