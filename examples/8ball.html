@@ -1,114 +1,58 @@
 <!DOCTYPE HTML>
-<html>
-<header>
-  <title>Magic 8 Ball App</title>
-  <link rel="stylesheet" type="text/css" src="/examples/8ball.css">
-</header>
-<body>
-<div id="container">
-  <div id="blank8ballimg">
-    <img src="/images/8ball.png">
-  </div>
-  <div id="answer8ballimg">
-  </div>
-</div>
-<br>
-<script type="text/javascript">
-function eightBallApp() {
-
-var userFirstName = prompt("Please enter your first name", "<Your first name goes here>");
-var userLastName = prompt("Please enter your last name", "<Your last name goes here>");
-var userQuestion = prompt("Please ask the 8 Ball a question", "<Your question goes here>");
-
-if (userFirstName == null || userFirstName == "") {
-document.getElementById('#txtAnswer').innerHTML = "Please enter your first name.";
-} else if (userLastName == null || userLastName == "") {
-document.getElementById('#txtAnswer').innerHTML = "Please enter your last name";
-} else if (userQuestion == null || userQuestion == "") {
-document.getElementById('#txtAnswer').innerHTML = "Please ask the 8 Ball a question";
-} else {
-const randomNumber = Math.floor(Math.random() * 10);
-switch(randomNumber) {
-  case 0:
-    $('#answer8ballimg').html('<img src="/images/ABSOLUTELY.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 1:
-    $('#answer8ballimg').html('<img src="/images/ASKAGAIN.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 2:
-    $('#answer8ballimg').html('<img src="/images/COUNTONIT.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 3:
-    $('#answer8ballimg').html('<img src="/images/GOFORIT.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 4:
-    $('#answer8ballimg').html('<img src="/images/ITWILLPASS.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 5:
-    $('#answer8ballimg').html('<img src="/images/MAYBE.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 6:
-    $('#answer8ballimg').html('<img src="/images/NO.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 7:
-    $('#answer8ballimg').html('<img src="/images/NODOUBT.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 8:
-    $('#answer8ballimg').html('<img src="/images/NOTNOW.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 9:
-    $('#answer8ballimg').html('<img src="/images/VERYLIKELY.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  case 10:
-    $('#answer8ballimg').html('<img src="/images/YES.png">');
-    $('#answer8ballimg').fadeIn(500);
-    break;
-  }
-
-  document.getElementById('#submit') {
-      .click(
-           function ()
-           {
-               $(this).addClass('display: none;');
-               document.getElementById('#reset').classList.remove('display: none;');
-           }
-      );
-}
-}
-  document.getElementById("txtAnswer").innerHTML = "Hello " + userFirstName + " " + userLastName + "! You asked the 8 ball the following: " + userQuestion;
-};
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<meta name="author" content="Clark Fennell">
+<meta name="description" content="Magic 8 Ball">
+<link rel="stylesheet" type="text/css" href="/css/8ball.css">
+<link rel="stylesheet" href="https://maxcdn.bottstrapcdn.com/bottstrap/3.3.7/css/bootstrap.min.css">
+<!--[if lt IE 9]><link rel="stylesheet" href="ie.css"><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </script>
-  <button id="submit" onclick="eightBallApp()">ASK THE 8 BALL</button>
+<title>Clark Fennell's Portfolio Website</title>
+</head>
+<body>
   <script>
-  function resetApp() {
-    document.getElementById("txtAnswer").innerHTML = "";
+  $(document).ready(function(){
 
-    $("#answer8ballimg").fadeOut(500);
+  var magic8Ball = {};
+  magic8Ball.listofanswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes, definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
 
-    document.getElementById('#reset') {
-        .click(
-             function ()
-             {
-                 $(this).addClass('display: none;');
-                 document.getElementById('#submit').classList.remove('display: none;');
-             }
-        );
-  }
+  magic8Ball.getAnswer = function(question)
+  {
+    var randomNumber = Math.random();
+    var randomAnswer = Math.floor(randomNumber * this.listofanswers.length);
+    var answer = this.listofanswers[randomAnswer];
+
+    $("#8ball").effect( "shake" );
+    $("#answer").text( answer );
+    $("#answer").fadeIn(3000);
+
+    console.log(question);
+    console.log(answer);
   };
-  </script>
-  <button id="reset" onclick="resetApp()">ASK ANOTHER QUESTION</button>
-<div>
-  <h1 id="txtanswer"></h1>
+  $("#answer").hide();
+
+  var onClick = function()
+  {
+    $("#answer").hide();
+    var question = prompt("What do you want to know?");
+    magic8Ball.getAnswer(question);
+  };
+
+  $("#questionButton").click( onClick );
+});
+</script>
+<div class="shadow"></div>
+
+<div class="epos">
+<div class="eball">
+  <div class="egrad"></div>
+  <div class="ewin"></div>
+  <div class="triangle"></div>
+  <div class="textbox"></div>
+</div>
 </div>
 </body>
 </html>
