@@ -8,51 +8,56 @@
 <link rel="stylesheet" type="text/css" href="/examples/8ball.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+</script>
+<script>
+$(document).ready(function(){
+
+  var magic8Ball = {};
+  magic8Ball.listofanswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes, definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+
+  magic8Ball.getAnswer = function(question)
+  {
+    var randomNumber = Math.random();
+    var randomAnswer = Math.floor(randomNumber * this.listofanswers.length);
+    var answer = this.listofanswers[randomAnswer];
+
+    $("#8ball").effect( "shake" );
+    $("#answer").text( answer );
+    $("#answer").fadeIn(3000);
+    $("#8ball").attr("src", "/images/answerside.png");
+
+    console.log(question);
+    console.log(answer);
+  };
+  $("#answer").hide();
+
+  var onClick = function()
+  {
+    $("#answer").hide();
+    $("#8ball").attr("src", "/images/magic8ballQuestion.png");
+    var question = prompt("What do you want to know?");
+    magic8Ball.getAnswer(question);
+  };
+
+  $("#questionButton").click( onClick );
+});
+</script>
 <title>Clark Fennell's Portfolio Website</title>
 </head>
 <body>
-  <script>
-  var words = [
-    'It is certain',
-'It is decidedly so',
-'Without a doubt',
-'Yes definitely',
-'You may rely on it',
-'As I see it, yes',
-'Most likely',
-'Outlook good',
-'Yes',
-'Signs point to yes',
-'Reply hazy try again',
-'Ask again later',
-'Better not tell you now',
-'Cannot predict now',
-'Concentrate and ask again',
-'Do not count on it',
-'My reply is no',
-'My sources say no',
-'Outlook not so good',
-'Very doubtful'
-    ];
-
-    var getRandomWord = function () {
-      return words[Math.floor(Math.random() * words.length)];
-    };
-$(function() {$('.eball').mouseenter(function(){
-    $('.textbox').html(getRandomWord());
-    });
-
-});
-</script>
-<div class="shadow"></div>
-
-<div class="epos">
-<div class="eball">
-  <div class="egrad"></div>
-  <div class="ewin"></div>
-  <div class="triangle"></div>
-  <div class="textbox"></div>
+<div class="page">
+<header>
+<h1>MAGIC&nbsp;<span>8</span>&nbsp;BALL</h1>
+</header>
+<div class="ball">
+<img id="8ball" src="/images/magic8ballQuestion.png">
+<p id="answer" class="answer">THIS IS WHERE THE ANSWER GOES</p>
 </div>
+<div class="button">
+<button id="questionButton">ASK THE 8 BALL</button>
+</div>
+<script type="text/javascript" src="script.js"></script>
 </div>
 </body>
 </html>
