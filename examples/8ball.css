@@ -43,13 +43,13 @@ position: relative;
   top: 38%;
   left: 46%;
   width: 11%;
-  font-size: 50%;
+  font-size: 80%;
 }
 
 #questionButton {
   font-family: 'Righteous', cursive;
-  font-size: 30px;
-  font-size: 1.875em;
+  font-size: 15px;
+  font-size: 1.375em;
   color: #ffffff;
   background-color: #330066;
   border-radius: 5px;
