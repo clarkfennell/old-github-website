@@ -89,6 +89,7 @@ p {
 	height: 281px;
 	margin: 0 auto 10px;
 	align-items: center;
+	overflow: hidden;
 }
 
 #aboutme {background-color: #EEEAE3;}
@@ -98,14 +99,14 @@ p {
 #contactme {background-color: #EEEAE3;}
 
 @media only screen and (max-width:800px) {
-  .content-reveal {
+  .content-reveal, #wrapper {
     width: 80%;
     padding: 0;
   }
 }
 
 	@media only screen and (max-width:500px) {
-	  .content-reveal {
+	  .content-reveal, #wrapper {
 	    width: 100%;
 	  }
 	}
