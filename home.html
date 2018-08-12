@@ -36,14 +36,14 @@ $(document).ready( function() {
   $('#content-reveal').hide();
   $('#aboutme').click( function() {
       $('#content-reveal').fadeOut( 500, function() {
-          $('#content-reveal').html( '<div class="maindiv"><h2>ABOUT ME</h2><p>Age: 29<br>Location: Leeds<br><br>I am a developer specialising in HTML, CSS, JAVA, JaveScript, SQL, Command Line, Ruby and many more.<br><br>I am also well equpit at using Adobe programs, such as, PhotoShop, Dreamweaver, Illistrator, InDesign, and other software as well.<br><br>I like to board and video games, watching indepentdant professional wrestling & a nice cup of tea.</p></div>' );
+          $('#content-reveal').html( '<div class="maindiv"><h2>ABOUT ME</h2><p>Age: 29<br>Location: Leeds<br><br>I am a developer specialising in HTML, CSS, JAVA, JavaScript, SQL, Command Line, Ruby and many more software languages.<br><br>I am also well-equipped at using Adobe software, such as, Photoshop, Dreamweaver, Illustrator, InDesign, amongst others.<br><br>In my spare time I like to play both board and video games, watching indepentdant and professional wrestling. I also love a nice cup of tea.</p></div>' );
           $('#content-reveal').fadeIn( 500 );
       } );
   } );
   $('#myhtmlcss').click( function() {
       $('#content-reveal').fadeOut( 500, function() {
           $('#content-reveal').html(
-            '<div class="maindiv"> <h2>HTML AND CSS</h2> <p>Below is example of HTML and CSS for a website showing a Kale Caesar Quinoa Salad with Roasted Chicken recipe.</p> <a href="/examples/recipeexample.html" alt="Kale Caesar Quinoa Salad with Roasted Chicken Recipe">CLICK HERE TO SEE THE EXAMPLE IN ACTION</a></p> <p>My portfolio website is also another example of my HTML, CSS and SCSS skills.<br><br>The HTML and CSS code for this website, plus plenty of other examples, are on my <a href="https://www.github.com/clarkfennell">GITHUB</a> </p> </div>'
+            '<div class="maindiv"> <h2>HTML AND CSS</h2> <p>Below is example of HTML and CSS that I have written for a website giving a recipe for a kale caesar salad with quinoa and roasted chicken.</p> <a href="/examples/recipeexample.html" alt="Kale Caesar Quinoa Salad with Roasted Chicken Recipe">CLICK HERE TO SEE THE EXAMPLE IN ACTION</a></p> <p>This portfolio website is also another demonstration of my HTML, CSS and SCSS skills.<br><br>The HTML and CSS code for this website, plus plenty of other examples, are on my <a href="https://www.github.com/clarkfennell">GITHUB</a> </p> </div>'
           );
           $('#content-reveal').fadeIn( 500 );
         } );
@@ -70,7 +70,7 @@ $(document).ready( function() {
   } );
 } );
 </script>
-  <ul class="PrimaryNav with-indicator">
+  <ul class="PrimaryNav with-indicator" style="overflow:auto">
     <li class="Nav-item" id="aboutme">ABOUT ME</li>
     <li class="Nav-item" id="myhtmlcss">HTML & CSS</li>
     <li class="Nav-item is-active" id="myjscript">JSCRIPT</li>

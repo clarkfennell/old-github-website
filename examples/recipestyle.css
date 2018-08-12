@@ -1,6 +1,9 @@
-/* This is the code for style.css */
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Montserrat:300');
+
 img {
-  height: 150px;
+  height: auto;
+  width: 30%;
+  left: 0%;
 }
 
 .description{
@@ -28,5 +31,14 @@ img {
 }
 
 h1, h2, p, li{
-  font-family: Helvetica;
+  font-family: 'Just Another Hand', cursive;
+}
+
+html, header {
+	background-color: #EEEAE3;
+  font-family: 'Just Another Hand', cursive;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
