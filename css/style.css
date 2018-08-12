@@ -31,17 +31,18 @@ p {
 }
 
 .contacticon {
-	height: auto;
-	width: 50px;
+	height: 1.15em;
+	width: auto;
 	left: 0;
 }
 
 .contactinfo {
 	font-family: 'Cairo', sans-serif;
 	line-height: 80%;
+	font-size: 1.15em;
 }
 
-heading {
+.heading {
 	font-family:'Etna', sans-serif;
 	text-align: center;
 	color: #363151;
