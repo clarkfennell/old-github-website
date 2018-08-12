@@ -8,7 +8,8 @@
   max-width: 720px;
   padding: 0;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  line-height: 80%; }
 
 .Nav-item {
   background: #363151;

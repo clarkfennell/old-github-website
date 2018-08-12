@@ -81,7 +81,7 @@ p {
 		align-items: center;
 		max-width: 720px;
 		width: 100%;
-		overflow: hidden;
+		overflow: auto;
 }
 
 #wrapper {
@@ -89,7 +89,7 @@ p {
 	height: 281px;
 	margin: 0 auto 10px;
 	align-items: center;
-	overflow: hidden;
+	overflow: auto;
 }
 
 #aboutme {background-color: #EEEAE3;}
