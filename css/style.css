@@ -100,7 +100,7 @@ p {
 
 #wrapper {
 	width: 450px;
-	height: 281px;
+	height: auto;
 	margin: 0 auto 10px;
 	align-items: center;
 	overflow: auto;
