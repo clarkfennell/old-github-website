@@ -81,7 +81,7 @@ p {
 		align-items: center;
 		max-width: 720px;
 		width: 100%;
-		overflow: scroll;
+		overflow: auto;
 }
 
 #wrapper {
@@ -89,7 +89,7 @@ p {
 	height: 281px;
 	margin: 0 auto 10px;
 	align-items: center;
-	overflow: scroll;
+	overflow: auto;
 }
 
 #aboutme {background-color: #EEEAE3;}
@@ -101,6 +101,7 @@ p {
 @media only screen and (max-width:800px) {
   .content-reveal, #wrapper {
     width: 80%;
+		height: auto;
     padding: 0;
   }
 }
@@ -108,5 +109,6 @@ p {
 	@media only screen and (max-width:500px) {
 	  .content-reveal, #wrapper {
 	    width: 100%;
+			height: auto;
 	  }
 	}
