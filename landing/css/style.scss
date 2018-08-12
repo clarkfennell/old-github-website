@@ -44,7 +44,7 @@ body{
 }
 
 @media only screen and (max-width:800px) {
-  html {
+  html, .title {
     width: 100%;
 		height: auto;
     padding: 0;
@@ -52,7 +52,7 @@ body{
 }
 
 @media only screen and (max-width:500px) {
-  html {
+  html, .title {
     width: 100%;
     height: auto;
   }
