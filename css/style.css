@@ -81,7 +81,7 @@ p {
 		align-items: center;
 		max-width: 720px;
 		width: 100%;
-		overflow: auto;
+		overflow: scroll;
 }
 
 #wrapper {
