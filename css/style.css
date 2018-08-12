@@ -89,7 +89,7 @@ p {
 	height: 281px;
 	margin: 0 auto 10px;
 	align-items: center;
-	overflow: auto;
+	overflow: scroll;
 }
 
 #aboutme {background-color: #EEEAE3;}
