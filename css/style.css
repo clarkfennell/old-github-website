@@ -32,12 +32,13 @@ p {
 
 .contacticon {
 	height: auto;
-	width: 20px;
+	width: 50px;
 	left: 0;
 }
 
 .contactinfo {
 	font-family: 'Cairo', sans-serif;
+	line-height: 80%;
 }
 
 heading {
