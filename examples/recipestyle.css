@@ -9,7 +9,7 @@ img {
 }
 
 .footer {
-  background-color:#f1f1f1;
+  background-color: #b9d9c9;
   text-align:center;
   padding:10px;
   margin-top:7px;
@@ -42,9 +42,12 @@ h1, h2 {
 }
 
 html, header {
-	background-color: #b9d9c9;
   font-family: 'Dancing Script', cursive;
   text-align: left;
+}
+
+header {
+	background-color: #b9d9c9;
 }
 
 body, p, li {
@@ -62,13 +65,13 @@ body, p, li {
 .menu {
   float: left;
   width: 20%;
-  background-color: #b9d9c9;
+  background-color: #c9b9d9;
 }
 
 .menuitem {
   padding: 8px;
   margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #d9c9b9;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -80,7 +83,7 @@ body, p, li {
 }
 
 .right {
-  background-color: #c9b9d9;
+  background-color: #d9c9b9;
   float: left;
   width: 20%;
   padding: 10px 15px;
