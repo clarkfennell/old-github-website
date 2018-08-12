@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Dawning+of+a+New+Day');
 
 img {
-  height: auto;
-  width: 30%;
-  left: 0%;
+  width: auto;
 }
 
 .description{
   font-size: 20px;
+}
+
+.footer {
+  background-color:#f1f1f1;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  font-size:12px;
 }
 
 .cook-time{
@@ -30,15 +36,65 @@ img {
   color: Seagreen;
 }
 
-h1, h2, p, li{
-  font-family: 'Just Another Hand', cursive;
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+  text-align: left;
 }
 
 html, header {
 	background-color: #EEEAE3;
-  font-family: 'Just Another Hand', cursive;
+  font-family: 'Dancing Script', cursive;
+  text-align: left;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+body, p, li {
+  font-family: 'Dawning of a New Day', cursive;
+  align-items: center;
+  overflow: hidden;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.top {
+  background-color:#f1f1f1;
+  padding:15px;
+}
+
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
