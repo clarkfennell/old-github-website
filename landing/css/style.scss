@@ -23,6 +23,8 @@ body{
 .container{
   position:absolute;
   @include center();
+  width:100%;
+  height: auto;
 }
 .title{
   font-weight: 800;
@@ -35,6 +37,8 @@ body{
   text-align:center;
   line-height:90px;
   letter-spacing: -8px;
+  width: 100%;
+  height: auto;
 }
 .subtitle{
   display: block;
