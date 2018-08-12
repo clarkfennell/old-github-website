@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Dawning+of+a+New+Day');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Raleway');
 
 img {
   width: auto;
@@ -42,45 +42,53 @@ h1, h2 {
 }
 
 html, header {
-	background-color: #EEEAE3;
+	background-color: #b9d9c9;
   font-family: 'Dancing Script', cursive;
   text-align: left;
 }
 
 body, p, li {
-  font-family: 'Dawning of a New Day', cursive;
+  font-family: 'Railway', sans-serif;
   align-items: center;
   overflow: hidden;
   text-align: left;
+  background-color: #d9c9b9;
 }
 
 * {
   box-sizing: border-box;
 }
+
 .menu {
   float: left;
   width: 20%;
+  background-color: #b9d9c9;
 }
+
 .menuitem {
   padding: 8px;
   margin-top: 7px;
   border-bottom: 1px solid #f1f1f1;
+  font-family: 'Raleway', sans-serif;
 }
+
 .main {
   float: left;
   width: 60%;
   padding: 0 20px;
   overflow: hidden;
 }
+
 .right {
-  background-color: lightblue;
+  background-color: #c9b9d9;
   float: left;
   width: 20%;
   padding: 10px 15px;
   margin-top: 7px;
 }
+
 .top {
-  background-color:#f1f1f1;
+  background-color:#b9d9c9;
   padding:15px;
 }
 
@@ -93,6 +101,7 @@ body, p, li {
     width: 100%;
   }
 }
+
 @media only screen and (max-width:500px) {
   .menu, .main, .right {
     width: 100%;
