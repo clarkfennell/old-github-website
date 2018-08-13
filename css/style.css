@@ -65,6 +65,7 @@ p {
 	line-height: 80%;
 	font-size: 2.40em;
 	text-decoration: none;
+	padding-bottom: -0.1px;
 }
 
 .heading {
