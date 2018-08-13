@@ -147,8 +147,40 @@ p {
 }
 
 @media only screen and (max-width:500px) {
-	  .content-reveal, #wrapper, .contacticon, .contactinfo {
-	    width: 100%;
-			height: auto;
-	  }
+	.content-reveal, #wrapper, .contacticon {
+		width: 80%;
+		height: auto;
+		padding: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.content-reveal, #wrapper, .contacticon {
+    width: 80%;
+		height: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.content-reveal, #wrapper, .contacticon {
+    width: 80%;
+		height: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.content-reveal, #wrapper, .contacticon {
+    width: 80%;
+		height: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.content-reveal, #wrapper, .contacticon {
+    width: 80%;
+		height: auto;
+    padding: 0;
+  }
 }
