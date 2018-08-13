@@ -16,6 +16,30 @@ html, header, body {
 	font-family: 'Titllium Web', sans-serif;
 }
 
+a {
+	color: #24282B;
+}
+
+	a:visited {
+		text-decoration: none;
+		color: #24282B;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: #24282B;
+}
+
+a:focus {
+	text-decoration: none;
+	color: #24282B;
+}
+
+a:hover, a:active {
+	 text-decoration: none;
+	 color: #24282B;
+ }
+
 h2 {
 		font-size: 1.15em;
 		color: #24282B;
@@ -40,6 +64,7 @@ p {
 	font-family: 'Cairo', sans-serif;
 	line-height: 80%;
 	font-size: 2.00em;
+	text-decoration: none;
 }
 
 .heading {
