@@ -42,12 +42,12 @@ body {
   padding-top: 10px; }
 
 @media only screen and (max-width: 800px) {
-  html, .title {
+  .title {
     width: 90%;
     height: auto;
     padding: 0; } }
 @media only screen and (max-width: 500px) {
-  html, .title {
+  .title {
     width: 90%;
     height: auto; } }
 
