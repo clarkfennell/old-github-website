@@ -55,7 +55,7 @@ p {
 }
 
 .contacticon {
-	height: 1.70em;
+	height: 1.50em;
 	width: auto;
 	left: 0;
 }
@@ -63,7 +63,7 @@ p {
 .contactinfo {
 	font-family: 'Cairo', sans-serif;
 	line-height: 80%;
-	font-size: 1.70em;
+	font-size: 1.50em;
 	text-decoration: none;
 	padding-bottom: -0.1px;
 }
