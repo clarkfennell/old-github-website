@@ -145,6 +145,10 @@ p {
 		height: auto;
     padding: 0;
   }
+	.contacticon, .contactinfo {
+		height: 1.40em;
+		width: auto;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -153,6 +157,10 @@ p {
 		height: auto;
     padding: 0;
   }
+	.contacticon, .contactinfo {
+		height: 1.50em;
+		width: auto;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -161,6 +169,10 @@ p {
 		height: auto;
     padding: 0;
   }
+	.contacticon, .contactinfo {
+		height: 1.00em;
+		width: auto;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -169,4 +181,8 @@ p {
 		height: auto;
     padding: 0;
   }
+	.contacticon, .contactinfo {
+		height: 0.70em;
+		width: auto;
+	}
 }
